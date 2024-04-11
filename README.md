@@ -1,1 +1,1 @@
-# javascript
+# javascript lessons and homeworks
