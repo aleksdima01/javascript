@@ -1,0 +1,57 @@
+[
+    {
+        "image": "./img/1-card.png",
+        "name": "Jumper",
+        "price": 52
+    },
+    {
+        "image": "./img/2-card.png",
+        "name": "T-shirt",
+        "price": 56
+    },
+    {
+        "image": "./img/3-card.png",
+        "name": "Windbreaker",
+        "price": 68
+    },
+    {
+        "image": "./img/4-card.png",
+        "name": "Shirt",
+        "price": 73
+    },
+    {
+        "image": "./img/5-card.png",
+        "name": "Jacket",
+        "price": 43
+    },
+    {
+        "image": "./img/6-card.png",
+        "name": "Windbreaker",
+        "price": 70
+    },
+    {
+        "image": "./img/7-card.png",
+        "name": "Shirt",
+        "price": 36
+    },
+    {
+        "image": "./img/8-card.png",
+        "name": "Jacket",
+        "price": 39
+    },
+    {
+        "image": "./img/9-card.png",
+        "name": "Windbreaker",
+        "price": 64
+    },
+    {
+        "image": "./img/4-card.png",
+        "name": "Shirt",
+        "price": 73
+    },
+    {
+        "image": "./img/2-card.png",
+        "name": "Jacket",
+        "price": 56
+    }
+]

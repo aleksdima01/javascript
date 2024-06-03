@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="left-header-block">
+                <a class="header-logo" href="../homework1/index.html">
+                    <img src="./img/lef-logo.svg" alt="Левое лого">
+                    <p class="BRAN">BRAN<span class="D">D</span> </p>
+                </a>
+                <div class="browse">
+                    <div class="top-menu">
+                        <ul class="top-menu__ul">
+                            <li class="top-menu__li">
+                                <label for="psbtn4" class="top-menu__link">
+                                    Browse<i class="fa fa-caret-down"
+                                        style="color: #838383;font-size: 14px; margin-top: 3px;margin-left: 8px;"></i>
+                                </label>
+                                <input type="checkbox" id="psbtn4">
+                                <div class="top-menu__box">
+                                    <h3 class="top-menu__box__heading">Women</h3>
+                                    <a href="#" class="top-menu__box__link">Dresses</a>
+                                    <a href="#" class="top-menu__box__link">Tops</a>
+                                    <a href="#" class="top-menu__box__link">Sweaters/Knits</a>
+                                    <a href="#" class="top-menu__box__link">Jackets/Coats</a>
+                                    <a href="#" class="top-menu__box__link">Blazers</a>
+                                    <a href="#" class="top-menu__box__link">Denim</a>
+                                    <a href="#" class="top-menu__box__link">Leggings/Pants</a>
+                                    <a href="#" class="top-menu__box__link">Skirts/Shorts</a>
+                                    <a href="#" class="top-menu__box__link">Accessories</a>
+                                    <h3 class="top-menu__box__heading">Man</h3>
+                                    <a href="#" class="top-menu__box__link">Tees/Tank tops</a>
+                                    <a href="#" class="top-menu__box__link">Shirts/Polos</a>
+                                    <a href="#" class="top-menu__box__link">Sweaters</a>
+                                    <a href="#" class="top-menu__box__link">Sweatshirts/Hoodies</a>
+                                    <a href="#" class="top-menu__box__link">Blazers</a>
+                                    <a href="#" class="top-menu__box__link">Jackets/vests</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <form>
+                        <input class="search_field" type="search" placeholder="Search for Item">
+                        <button class="search_button" type="submit"><i class="fa fa-search"
+                                style="color: #a4a4a4;;"></i></button>
+                    </form>
+                </div>
+
+            </div>
+            <div class="right-header-block">
+                <li class="cart-menu">
+                    <a href="../homework5/cart.html">
+                        <svg width="31.995575" height="29.000000" viewBox="0 0 31.9956 29" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                                Created with Pixso.
+                            </desc>
+                            <defs />
+                            <path
+                                d="M26.2009 29C25.5532 28.9739 24.9415 28.6947 24.4972 28.2227C24.0529 27.7506 23.8114 27.1232 23.8245 26.475C23.8376 25.8269 24.1042 25.2097 24.5673 24.756C25.0303 24.3021 25.6527 24.048 26.301 24.048C26.9493 24.048 27.5717 24.3021 28.0347 24.756C28.4977 25.2097 28.7644 25.8269 28.7775 26.475C28.7906 27.1232 28.549 27.7506 28.1047 28.2227C27.6604 28.6947 27.0488 28.9739 26.401 29L26.2009 29ZM6.75293 26.3199C6.75293 25.7899 6.9101 25.2719 7.20459 24.8311C7.49908 24.3904 7.91763 24.0469 8.40735 23.844C8.89706 23.6411 9.43594 23.5881 9.95581 23.6915C10.4757 23.7949 10.9532 24.0502 11.328 24.4249C11.7028 24.7998 11.9581 25.2773 12.0615 25.7971C12.1649 26.317 12.1118 26.8558 11.9089 27.3456C11.7061 27.8353 11.3626 28.2539 10.9219 28.5483C10.4811 28.8428 9.96304 29 9.43298 29C9.08087 29.0002 8.73212 28.9312 8.40674 28.7966C8.08136 28.662 7.78571 28.4646 7.53662 28.2158C7.28754 27.9669 7.09 27.6714 6.9552 27.3461C6.8204 27.0208 6.75098 26.6721 6.75098 26.3199L6.75293 26.3199ZM10.553 20.686C10.2935 20.6868 10.041 20.6023 9.83411 20.4457C9.62726 20.2891 9.47757 20.069 9.40796 19.819L4.57495 2.36401L1.18201 2.36401C0.86853 2.36401 0.567871 2.2395 0.346191 2.01782C0.124512 1.79614 0 1.49548 0 1.18201C0 0.86853 0.124512 0.567871 0.346191 0.346191C0.567871 0.124512 0.86853 0 1.18201 0L5.46301 0C5.7225 -0.000854492 5.97504 0.0837402 6.18176 0.240601C6.38849 0.397461 6.53784 0.61792 6.60693 0.868042L11.4399 18.323L24.6179 18.323L29.001 8.27502L14.401 8.27502C14.2428 8.27966 14.0854 8.25244 13.9379 8.19507C13.7904 8.1377 13.6559 8.05139 13.5424 7.94104C13.4288 7.83081 13.3386 7.69885 13.277 7.5531C13.2154 7.40735 13.1836 7.25073 13.1836 7.09253C13.1836 6.9342 13.2154 6.77759 13.277 6.63184C13.3386 6.48608 13.4288 6.35413 13.5424 6.2439C13.6559 6.13367 13.7904 6.04724 13.9379 5.98999C14.0854 5.93262 14.2428 5.9054 14.401 5.91003L30.814 5.91003C31.0096 5.90991 31.2022 5.95862 31.3744 6.05176C31.5465 6.14478 31.6928 6.2793 31.7999 6.44299C31.9078 6.6073 31.9734 6.79565 31.9908 6.99146C32.0083 7.18726 31.9771 7.38428 31.9 7.56506L26.495 19.9771C26.4026 20.1876 26.2509 20.3668 26.0585 20.4927C25.866 20.6187 25.641 20.6858 25.411 20.686L10.553 20.686Z"
+                                fill="#E8E8E8" fill-opacity="1.000000" fill-rule="nonzero" />
+                        </svg>
+                    </a>
+                    <div class="cart-menu__mega-box">
+                        <!-- <div class="cart-menu__menu-item">
+                            <a href="../homework2/single-page.html" class="cart-menu__menu-item__img">
+                                <img src="./img/cart-menu-man.png" alt="cart-menu-man">
+                            </a>
+                            <a href="../homework2/single-page.html" class="cart-menu__menu-item__text-a">
+                                <div class="cart-menu__menu-item__text">
+                                    <h3 class="cart-menu__menu-item__h3">Rebox Zane</h3>
+                                    <p>
+                                        <i class="fa fa-star" style="color: #e4af48;font-size: 12px;line-height: 1.2;
+                                font-weight: 400;text-transform: uppercase;"></i>
+                                        <i class="fa fa-star" style="color: #e4af48;font-size: 12px;line-height: 1.2;
+                                font-weight: 400;text-transform: uppercase;"></i>
+                                        <i class="fa fa-star" style="color: #e4af48;font-size: 12px;line-height: 1.2;
+                                font-weight: 400;text-transform: uppercase;"></i>
+                                        <i class="fa fa-star" style="color: #e4af48;font-size: 12px;line-height: 1.2;
+                                font-weight: 400;text-transform: uppercase;"></i>
+                                        <i class="fa fa-star" style="color: #e4af48;font-size: 12px;line-height: 1.2;
+                                font-weight: 400;text-transform: uppercase;"></i>
+                                    </p>
+                                    <p class="cart-menu__menu-item__p">1 <span>x</span> $250</p>
+                                </div>
+                            </a>
+                            <a href="#"> <i class="fa fa-times-circle"
+                                    style="color:#c0c0c0;font-size: 16px;font-weight: 400;line-height: 1.2;margin-left: 55px;"></i></a>
+                        </div>
+                        <div class="cart-menu__menu-item__border"></div>
+                        <div class="cart-menu__menu-item">
+                            <a href="../homework2/single-page.html" class="cart-menu__menu-item__img">
+                                <img src="./img/cart_menu_woman.png" alt="cart-menu-man">
+                            </a>
+                            <a href="../homework2/single-page.html" class="cart-menu__menu-item__text-a">
+                                <div class="cart-menu__menu-item__text">
+                                    <h3 class="cart-menu__menu-item__h3">Rebox Zane</h3>
+                                    <p>
+                                        <i class="fa fa-star" style="color: #e4af48;font-size: 12px;line-height: 1.2;
+                                font-weight: 400;text-transform: uppercase;"></i>
+                                        <i class="fa fa-star" style="color: #e4af48;font-size: 12px;line-height: 1.2;
+                                font-weight: 400;text-transform: uppercase;"></i>
+                                        <i class="fa fa-star" style="color: #e4af48;font-size: 12px;line-height: 1.2;
+                                font-weight: 400;text-transform: uppercase;"></i>
+                                        <i class="fa fa-star" style="color: #e4af48;font-size: 12px;line-height: 1.2;
+                                font-weight: 400;text-transform: uppercase;"></i>
+                                        <i class="fa fa-star" style="color: #e4af48;font-size: 12px;line-height: 1.2;
+                                font-weight: 400;text-transform: uppercase;"></i>
+                                    </p>
+                                    <p class="cart-menu__menu-item__p">1 <span>x</span> $250</p>
+                                </div>
+                            </a>
+                            <a href="#"> <i class="fa fa-times-circle"
+                                    style="color:#c0c0c0;font-size: 16px;font-weight: 400;line-height: 1.2;margin-left: 55px;"></i></a>
+                        </div>
+                        <div class="cart-menu__menu-item__border"></div>
+                        <h2 class="cart-menu__mega-box__h2">TOTAL <span>$500.00</span></h2>
+                        <a href="../homework4/chekout.html" class="cart-menu__mega-box__a">CHECKOUT</a>
+                        <a href="../homework5/cart.html" class=" cart-menu__mega-box__a cart-menu__mega-box__a_cart">Go
+                            to cart</a> -->
+                    </div>
+                </li>
+
+                <button class="button-right" type="button">My Account <i class="fa fa-caret-down"
+                        style="color: #ffffff;;font-size: 14px;"></i></button>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="header_bottom">
+            <ul class="menu">
+                <li class="menu-list"><a class="menu-link" href="#">Home</a>
+                    <div class="mega-box">
+                        <div class="menu-item">
+                            <h3 class="menu-headding">Home</h3>
+                            <a href="#" class="mega-link">Dresses</a>
+                            <a href="#" class="mega-link">Tops</a>
+                            <a href="#" class="mega-link">Sweaters/Knits</a>
+                            <a href="#" class="mega-link">Jackets/Coats</a>
+                            <a href="#" class="mega-link">Blazers</a>
+                            <a href="#" class="mega-link">Denim</a>
+                            <a href="#" class="mega-link">Leggins/Pants</a>
+                            <a href="#" class="mega-link">Skirts/Shorts</a>
+                            <a href="#" class="mega-link">Accesories</a>
+                        </div>
+                        <div class="menu-item">
+                            <h3 class="menu-headding">Home</h3>
+                            <a href="#" class="mega-link">Dresses</a>
+                            <a href="#" class="mega-link">Tops</a>
+                            <a href="#" class="mega-link">Sweaters/Knits</a>
+                            <a href="#" class="mega-link">Jackets/Coats</a>
+                            <div class="menu-item menu-item-in-item">
+                                <h3 class="menu-headding">Home</h3>
+                                <a href="#" class="mega-link">Dresses</a>
+                                <a href="#" class="mega-link">Tops</a>
+                                <a href="#" class="mega-link">Sweaters/Knits</a>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <h3 class="menu-headding">Home</h3>
+                            <a href="#" class="mega-link">Dresses</a>
+                            <a href="#" class="mega-link">Tops</a>
+                            <a href="#" class="mega-link">Sweaters/Knits</a>
+                            <a href="#" class="mega-link">Jackets/Coats</a>
+                            <div class="menu-item-img-container">
+                                <img class="menu-item_img" src="./img/man_in_glasses.png" alt="man in glasses">
+                                <div class="menu-item-img-container-text">Super<br>sale!</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu-list"><a class="menu-link" href="#">Man</a>
+                    <div class="mega-box">
+                        <div class="menu-item">
+                            <h3 class="menu-headding">Man</h3>
+                            <a href="#" class="mega-link">Dresses</a>
+                            <a href="#" class="mega-link">Tops</a>
+                            <a href="#" class="mega-link">Sweaters/Knits</a>
+                            <a href="#" class="mega-link">Jackets/Coats</a>
+                            <a href="#" class="mega-link">Blazers</a>
+                            <a href="#" class="mega-link">Denim</a>
+                            <a href="#" class="mega-link">Leggins/Pants</a>
+                            <a href="#" class="mega-link">Skirts/Shorts</a>
+                            <a href="#" class="mega-link">Accesories</a>
+                        </div>
+                        <div class="menu-item">
+                            <h3 class="menu-headding">Man</h3>
+                            <a href="#" class="mega-link">Dresses</a>
+                            <a href="#" class="mega-link">Tops</a>
+                            <a href="#" class="mega-link">Sweaters/Knits</a>
+                            <a href="#" class="mega-link">Jackets/Coats</a>
+                            <div class="menu-item menu-item-in-item">
+                                <h3 class="menu-headding">Man</h3>
+                                <a href="#" class="mega-link">Dresses</a>
+                                <a href="#" class="mega-link">Tops</a>
+                                <a href="#" class="mega-link">Sweaters/Knits</a>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <h3 class="menu-headding">Man</h3>
+                            <a href="#" class="mega-link">Dresses</a>
+                            <a href="#" class="mega-link">Tops</a>
+                            <a href="#" class="mega-link">Sweaters/Knits</a>
+                            <a href="#" class="mega-link">Jackets/Coats</a>
+                            <div class="menu-item-img-container">
+                                <img class="menu-item_img" src="./img/man_in_glasses.png" alt="man in glasses">
+                                <div class="menu-item-img-container-text">Super<br>sale!</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu-list"><a class="menu-link" href="#">Women</a>
+                    <div class="mega-box">
+                        <div class="menu-item">
+                            <h3 class="menu-headding">Women</h3>
+                            <a href="#" class="mega-link">Dresses</a>
+                            <a href="#" class="mega-link">Tops</a>
+                            <a href="#" class="mega-link">Sweaters/Knits</a>
+                            <a href="#" class="mega-link">Jackets/Coats</a>
+                            <a href="#" class="mega-link">Blazers</a>
+                            <a href="#" class="mega-link">Denim</a>
+                            <a href="#" class="mega-link">Leggins/Pants</a>
+                            <a href="#" class="mega-link">Skirts/Shorts</a>
+                            <a href="#" class="mega-link">Accesories</a>
+                        </div>
+                        <div class="menu-item">
+                            <h3 class="menu-headding">Women</h3>
+                            <a href="#" class="mega-link">Dresses</a>
+                            <a href="#" class="mega-link">Tops</a>
+                            <a href="#" class="mega-link">Sweaters/Knits</a>
+                            <a href="#" class="mega-link">Jackets/Coats</a>
+                            <div class="menu-item menu-item-in-item">
+                                <h3 class="menu-headding">Women</h3>
+                                <a href="#" class="mega-link">Dresses</a>
+                                <a href="#" class="mega-link">Tops</a>
+                                <a href="#" class="mega-link">Sweaters/Knits</a>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <h3 class="menu-headding">Women</h3>
+                            <a href="#" class="mega-link">Dresses</a>
+                            <a href="#" class="mega-link">Tops</a>
+                            <a href="#" class="mega-link">Sweaters/Knits</a>
+                            <a href="#" class="mega-link">Jackets/Coats</a>
+                            <div class="menu-item-img-container">
+                                <img class="menu-item_img" src="./img/man_in_glasses.png" alt="man in glasses">
+                                <div class="menu-item-img-container-text">Super<br>sale!</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu-list"><a class="menu-link" href="#">Kids</a>
+                    <div class="mega-box">
+                        <div class="menu-item">
+                            <h3 class="menu-headding">Kids</h3>
+                            <a href="#" class="mega-link">Dresses</a>
+                            <a href="#" class="mega-link">Tops</a>
+                            <a href="#" class="mega-link">Sweaters/Knits</a>
+                            <a href="#" class="mega-link">Jackets/Coats</a>
+                            <a href="#" class="mega-link">Blazers</a>
+                            <a href="#" class="mega-link">Denim</a>
+                            <a href="#" class="mega-link">Leggins/Pants</a>
+                            <a href="#" class="mega-link">Skirts/Shorts</a>
+                            <a href="#" class="mega-link">Accesories</a>
+                        </div>
+                        <div class="menu-item">
+                            <h3 class="menu-headding">Kids</h3>
+                            <a href="#" class="mega-link">Dresses</a>
+                            <a href="#" class="mega-link">Tops</a>
+                            <a href="#" class="mega-link">Sweaters/Knits</a>
+                            <a href="#" class="mega-link">Jackets/Coats</a>
+                            <div class="menu-item menu-item-in-item">
+                                <h3 class="menu-headding">Kids</h3>
+                                <a href="#" class="mega-link">Dresses</a>
+                                <a href="#" class="mega-link">Tops</a>
+                                <a href="#" class="mega-link">Sweaters/Knits</a>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <h3 class="menu-headding">Kids</h3>
+                            <a href="#" class="mega-link">Dresses</a>
+                            <a href="#" class="mega-link">Tops</a>
+                            <a href="#" class="mega-link">Sweaters/Knits</a>
+                            <a href="#" class="mega-link">Jackets/Coats</a>
+                            <div class="menu-item-img-container">
+                                <img class="menu-item_img" src="./img/man_in_glasses.png" alt="man in glasses">
+                                <div class="menu-item-img-container-text">Super<br>sale!</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu-list last"><a class="menu-link" href="#">Accessories</a>
+                    <div class="mega-box">
+                        <div class="menu-item">
+                            <h3 class="menu-headding">Accessories</h3>
+                            <a href="#" class="mega-link">Dresses</a>
+                            <a href="#" class="mega-link">Tops</a>
+                            <a href="#" class="mega-link">Sweaters/Knits</a>
+                            <a href="#" class="mega-link">Jackets/Coats</a>
+                            <a href="#" class="mega-link">Blazers</a>
+                            <a href="#" class="mega-link">Denim</a>
+                            <a href="#" class="mega-link">Leggins/Pants</a>
+                            <a href="#" class="mega-link">Skirts/Shorts</a>
+                            <a href="#" class="mega-link">Accesories</a>
+                        </div>
+                        <div class="menu-item">
+                            <h3 class="menu-headding">Accessories</h3>
+                            <a href="#" class="mega-link">Dresses</a>
+                            <a href="#" class="mega-link">Tops</a>
+                            <a href="#" class="mega-link">Sweaters/Knits</a>
+                            <a href="#" class="mega-link">Jackets/Coats</a>
+                            <div class="menu-item menu-item-in-item">
+                                <h3 class="menu-headding">Accessories</h3>
+                                <a href="#" class="mega-link">Dresses</a>
+                                <a href="#" class="mega-link">Tops</a>
+                                <a href="#" class="mega-link">Sweaters/Knits</a>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <h3 class="menu-headding">Accessories</h3>
+                            <a href="#" class="mega-link">Dresses</a>
+                            <a href="#" class="mega-link">Tops</a>
+                            <a href="#" class="mega-link">Sweaters/Knits</a>
+                            <a href="#" class="mega-link">Jackets/Coats</a>
+                            <div class="menu-item-img-container">
+                                <img class="menu-item_img" src="./img/man_in_glasses.png" alt="man in glasses">
+                                <div class="menu-item-img-container-text">Super<br>sale!</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu-list last"><a class="menu-link" href="#">Featured</a>
+                    <div class="mega-box">
+                        <div class="menu-item">
+                            <h3 class="menu-headding">Featured</h3>
+                            <a href="#" class="mega-link">Dresses</a>
+                            <a href="#" class="mega-link">Tops</a>
+                            <a href="#" class="mega-link">Sweaters/Knits</a>
+                            <a href="#" class="mega-link">Jackets/Coats</a>
+                            <a href="#" class="mega-link">Blazers</a>
+                            <a href="#" class="mega-link">Denim</a>
+                            <a href="#" class="mega-link">Leggins/Pants</a>
+                            <a href="#" class="mega-link">Skirts/Shorts</a>
+                            <a href="#" class="mega-link">Accesories</a>
+                        </div>
+                        <div class="menu-item">
+                            <h3 class="menu-headding">Featured</h3>
+                            <a href="#" class="mega-link">Dresses</a>
+                            <a href="#" class="mega-link">Tops</a>
+                            <a href="#" class="mega-link">Sweaters/Knits</a>
+                            <a href="#" class="mega-link">Jackets/Coats</a>
+                            <div class="menu-item menu-item-in-item">
+                                <h3 class="menu-headding">Featured</h3>
+                                <a href="#" class="mega-link">Dresses</a>
+                                <a href="#" class="mega-link">Tops</a>
+                                <a href="#" class="mega-link">Sweaters/Knits</a>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <h3 class="menu-headding">Featured</h3>
+                            <a href="#" class="mega-link">Dresses</a>
+                            <a href="#" class="mega-link">Tops</a>
+                            <a href="#" class="mega-link">Sweaters/Knits</a>
+                            <a href="#" class="mega-link">Jackets/Coats</a>
+                            <div class="menu-item-img-container">
+                                <img class="menu-item_img" src="./img/man_in_glasses.png" alt="man in glasses">
+                                <div class="menu-item-img-container-text">Super<br>sale!</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu-list last"><a class="menu-link" href="#">Hot Deals</a>
+                    <div class="mega-box">
+                        <div class="menu-item">
+                            <h3 class="menu-headding">Hot Deals</h3>
+                            <a href="#" class="mega-link">Dresses</a>
+                            <a href="#" class="mega-link">Tops</a>
+                            <a href="#" class="mega-link">Sweaters/Knits</a>
+                            <a href="#" class="mega-link">Jackets/Coats</a>
+                            <a href="#" class="mega-link">Blazers</a>
+                            <a href="#" class="mega-link">Denim</a>
+                            <a href="#" class="mega-link">Leggins/Pants</a>
+                            <a href="#" class="mega-link">Skirts/Shorts</a>
+                            <a href="#" class="mega-link">Accesories</a>
+                        </div>
+                        <div class="menu-item">
+                            <h3 class="menu-headding">Hot Deals</h3>
+                            <a href="#" class="mega-link">Dresses</a>
+                            <a href="#" class="mega-link">Tops</a>
+                            <a href="#" class="mega-link">Sweaters/Knits</a>
+                            <a href="#" class="mega-link">Jackets/Coats</a>
+                            <div class="menu-item menu-item-in-item">
+                                <h3 class="menu-headding">Hot Deals</h3>
+                                <a href="#" class="mega-link">Dresses</a>
+                                <a href="#" class="mega-link">Tops</a>
+                                <a href="#" class="mega-link">Sweaters/Knits</a>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <h3 class="menu-headding">Hot Deals</h3>
+                            <a href="#" class="mega-link">Dresses</a>
+                            <a href="#" class="mega-link">Tops</a>
+                            <a href="#" class="mega-link">Sweaters/Knits</a>
+                            <a href="#" class="mega-link">Jackets/Coats</a>
+                            <div class="menu-item-img-container">
+                                <img class="menu-item_img" src="./img/man_in_glasses.png" alt="man in glasses">
+                                <div class="menu-item-img-container-text">Super<br>sale!</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="new-arrivals">
+        <a href="#" class="new-arrivals__link">New Arrivals</a>
+        <ul class="ul-refs">
+            <li class="ul-refs__li"><a class="ul-refs__a" href="../homework1/index.html">home</a></li>
+            <li class="ul-refs__li"><a class="ul-refs__a" href="#">man</a></li>
+            <li class="ul-refs__li"><a class="ul-refs__a" href="#">New Arrivals</a></li>
+        </ul>
+    </nav>
+    <nav class="left-menu-nav">
+        <div class="left-menu">
+            <ul class="left-menu__ul">
+                <li class="left-menu__li">
+                    <label for="psbtn1" class="left-menu__link">Category</label>
+                    <input type="checkbox" id="psbtn1">
+                    <div class="left-menu__box">
+                        <a href="#" class="left-menu__box__link">Accesories</a>
+                        <a href="#" class="left-menu__box__link">Bags</a>
+                        <a href="#" class="left-menu__box__link">Denim</a>
+                        <a href="#" class="left-menu__box__link">Hoodies & Sweatshirts</a>
+                        <a href="#" class="left-menu__box__link">Jackets & Coats</a>
+                        <a href="#" class="left-menu__box__link">Pants</a>
+                        <a href="#" class="left-menu__box__link">Polos</a>
+                        <a href="#" class="left-menu__box__link">Shirts</a>
+                        <a href="#" class="left-menu__box__link">Shoes</a>
+                        <a href="#" class="left-menu__box__link">Shorts</a>
+                        <a href="#" class="left-menu__box__link">Sweaters & Knits</a>
+                        <a href="#" class="left-menu__box__link">T-Shirts</a>
+                        <a href="#" class="left-menu__box__link">Tanks</a>
+                    </div>
+                </li>
+                <li class="left-menu__li">
+                    <label for="psbtn2" class="left-menu__link">Brand</label>
+                    <input type="checkbox" id="psbtn2">
+                    <div class="left-menu__box">
+                        <a href="#" class="left-menu__box__link">Accesories</a>
+                        <a href="#" class="left-menu__box__link">Bags</a>
+                        <a href="#" class="left-menu__box__link">Denim</a>
+                        <a href="#" class="left-menu__box__link">Hoodies & Sweatshirts</a>
+                        <a href="#" class="left-menu__box__link">Jackets & Coats</a>
+                        <a href="#" class="left-menu__box__link">Pants</a>
+                        <a href="#" class="left-menu__box__link">Polos</a>
+                        <a href="#" class="left-menu__box__link">Shirts</a>
+                        <a href="#" class="left-menu__box__link">Shoes</a>
+                        <a href="#" class="left-menu__box__link">Shorts</a>
+                        <a href="#" class="left-menu__box__link">Sweaters & Knits</a>
+                    </div>
+                </li>
+                <li class="left-menu__li">
+                    <label for="psbtn3" class="left-menu__link">Designer</label>
+                    <input type="checkbox" id="psbtn3">
+                    <div class="left-menu__box">
+                        <a href="#" class="left-menu__box__link">Accesories</a>
+                        <a href="#" class="left-menu__box__link">Bags</a>
+                        <a href="#" class="left-menu__box__link">Denim</a>
+                        <a href="#" class="left-menu__box__link">Hoodies & Sweatshirts</a>
+                        <a href="#" class="left-menu__box__link">Jackets & Coats</a>
+                        <a href="#" class="left-menu__box__link">Pants</a>
+                        <a href="#" class="left-menu__box__link">Polos</a>
+                        <a href="#" class="left-menu__box__link">Shirts</a>
+                        <a href="#" class="left-menu__box__link">Shoes</a>
+                        <a href="#" class="left-menu__box__link">Shorts</a>
+                        <a href="#" class="left-menu__box__link">Sweaters & Knits</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="bias-main-content">
+        <nav class="sort">
+            <div class="trending-now">
+                <h2 class="trending-now__h2">Trending-now</h2>
+                <ul class="trending-now__ul">
+                    <li class="trending-now__li"><a class="trending-now__a" href="#">Bohemian</a></li>
+                    <li class="trending-now__li"><a class="trending-now__a" href="#">Floral</a></li>
+                    <li class="trending-now__li"><a class="trending-now__a" href="#">Lace</a></li>
+                    <li class="trending-now__li"><a class="trending-now__a" href="#">Floral</a></li>
+                    <li class="trending-now__li"><a class="trending-now__a" href="#">Lace</a></li>
+                    <li class="trending-now__li"><a class="trending-now__a" href="#">Bohemian</a></li>
+                </ul>
+            </div>
+            <div class="size">
+                <h2 class="trending-now__h2">Size</h2>
+                <input class="size__check" type="checkbox" id="XXS" name="XXS">
+                <label class="size__checkbox" for="XXS">XXS</label>
+                <input class="size__check" type="checkbox" id="XS" name="XS">
+                <label class="size__checkbox" for="XS">XS</label>
+                <input class="size__check" type="checkbox" id="S" name="S">
+                <label class="size__checkbox" for="S">S</label>
+                <input class="size__check" type="checkbox" id="M" name="M">
+                <label class="size__checkbox" for="M">M</label>
+                <input class="size__check" type="checkbox" id="L" name="L">
+                <label class="size__checkbox" for="L">L</label>
+                <input class="size__check" type="checkbox" id="XL" name="XL">
+                <label class="size__checkbox" for="XL">XL</label>
+                <input class="size__check" type="checkbox" id="XXL" name="XXL">
+                <label class="size__checkbox" for="XXL">XXL</label>
+            </div>
+            <div class="price">
+                <h2 class="trending-now__h2">Price</h2>
+                <input type="range" id="tempB" name="temp" list="values">
+                <datalist id="values">
+                    <option value="0" label="$52"></option>
+                    <option value="100" label="$400"></option>
+                </datalist>
+            </div>
+        </nav>
+        <nav class="select">
+            <p class="sort-by">Sort By</p>
+            <select class="form-select" aria-label="Default select example">
+                <option class="value" selected>Name</option>
+                <option class="value" value="1">Price</option>
+                <option class="value" value="2">Popularity</option>
+                <option class="value" value="3">Novelty</option>
+            </select>
+            <p class="sort-by">Show</p>
+            <select class="form-select form-select_show" aria-label="Default select example">
+                <option class="value" value="0">06</option>
+                <option class="value" value="1" selected>09</option>
+                <option class="value" value="2">12</option>
+                <option class="value" value="3">15</option>
+                <option class="value" value="4">18</option>
+                <option class="value" value="5">21</option>
+            </select>
+        </nav>
+        <section class="cards">
+            <div class="cards-section">
+                <div class="item-box">
+                    <!-- <div class="item">
+                        <a href="../homework2/single-page.html" class="item-link">
+                            <div class="item-link__img">
+                                <img class="item-img" src="img/1-card.png" alt="item">
+                            </div>
+                            <div class="txt-box">
+                                <p class="description">Mango People T-shirt</p>
+                                <p class="item-price">$52.00</p>
+                            </div>
+                        </a>
+                        <div class="add-box">
+                            <a href="222222" class="add">
+                                <img src="img/cart-add.svg" alt="cart" class="cart">
+                                <p class="add-txt">Add to Cart</p>
+                            </a>
+                            <div class="add__icons">
+                                <a href="33333" class="add add_size">
+                                    <img src="img/arrows.png" alt="arrows" class="add-icons">
+                                </a>
+                                <a href="444444" class="add add_size">
+                                    <img src="img/heart.png" alt="heart" class="add-icons">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="../homework2/single-page.html" class="item-link">
+                            <div class="item-link__img">
+                                <img class="item-img" src="img/2-card.png" alt="item">
+                            </div>
+                            <div class="txt-box">
+                                <p class="description">Mango People T-shirt</p>
+                                <p class="item-price">$52.00</p>
+                            </div>
+                        </a>
+                        <div class="add-box">
+                            <a href="222222" class="add">
+                                <img src="img/cart-add.svg" alt="cart" class="cart">
+                                <p class="add-txt">Add to Cart</p>
+                            </a>
+                            <div class="add__icons">
+                                <a href="33333" class="add add_size">
+                                    <img src="img/arrows.png" alt="arrows" class="add-icons">
+                                </a>
+                                <a href="444444" class="add add_size">
+                                    <img src="img/heart.png" alt="heart" class="add-icons">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="../homework2/single-page.html" class="item-link">
+                            <div class="item-link__img">
+                                <img class="item-img" src="img/3-card.png" alt="item">
+                            </div>
+                            <div class="txt-box">
+                                <p class="description">Mango People T-shirt</p>
+                                <p class="item-price">$52.00</p>
+                            </div>
+                        </a>
+                        <div class="add-box">
+                            <a href="222222" class="add">
+                                <img src="img/cart-add.svg" alt="cart" class="cart">
+                                <p class="add-txt">Add to Cart</p>
+                            </a>
+                            <div class="add__icons">
+                                <a href="33333" class="add add_size">
+                                    <img src="img/arrows.png" alt="arrows" class="add-icons">
+                                </a>
+                                <a href="444444" class="add add_size">
+                                    <img src="img/heart.png" alt="heart" class="add-icons">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="../homework2/single-page.html" class="item-link">
+                            <div class="item-link__img">
+                                <img class="item-img" src="img/4-card.png" alt="item">
+                            </div>
+                            <div class="txt-box">
+                                <p class="description">Mango People T-shirt</p>
+                                <p class="item-price">$52.00</p>
+                            </div>
+                        </a>
+                        <div class="add-box">
+                            <a href="222222" class="add">
+                                <img src="img/cart-add.svg" alt="cart" class="cart">
+                                <p class="add-txt">Add to Cart</p>
+                            </a>
+                            <div class="add__icons">
+                                <a href="33333" class="add add_size">
+                                    <img src="img/arrows.png" alt="arrows" class="add-icons">
+                                </a>
+                                <a href="444444" class="add add_size">
+                                    <img src="img/heart.png" alt="heart" class="add-icons">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="../homework2/single-page.html" class="item-link">
+                            <div class="item-link__img">
+                                <img class="item-img" src="img/5-card.png" alt="item">
+                            </div>
+                            <div class="txt-box">
+                                <p class="description">Mango People T-shirt</p>
+                                <p class="item-price">$52.00</p>
+                            </div>
+                        </a>
+                        <div class="add-box">
+                            <a href="222222" class="add">
+                                <img src="img/cart-add.svg" alt="cart" class="cart">
+                                <p class="add-txt">Add to Cart</p>
+                            </a>
+                            <div class="add__icons">
+                                <a href="33333" class="add add_size">
+                                    <img src="img/arrows.png" alt="arrows" class="add-icons">
+                                </a>
+                                <a href="444444" class="add add_size">
+                                    <img src="img/heart.png" alt="heart" class="add-icons">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="../homework2/single-page.html" class="item-link">
+                            <div class="item-link__img">
+                                <img class="item-img" src="img/6-card.png" alt="item">
+                            </div>
+                            <div class="txt-box">
+                                <p class="description">Mango People T-shirt</p>
+                                <p class="item-price">$52.00</p>
+                            </div>
+                        </a>
+                        <div class="add-box">
+                            <a href="222222" class="add">
+                                <img src="img/cart-add.svg" alt="cart" class="cart">
+                                <p class="add-txt">Add to Cart</p>
+                            </a>
+                            <div class="add__icons">
+                                <a href="33333" class="add add_size">
+                                    <img src="img/arrows.png" alt="arrows" class="add-icons">
+                                </a>
+                                <a href="444444" class="add add_size">
+                                    <img src="img/heart.png" alt="heart" class="add-icons">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="../homework2/single-page.html" class="item-link">
+                            <div class="item-link__img">
+                                <img class="item-img" src="img/7-card.png" alt="item">
+                            </div>
+                            <div class="txt-box">
+                                <p class="description">Mango People T-shirt</p>
+                                <p class="item-price">$52.00</p>
+                            </div>
+                        </a>
+                        <div class="add-box">
+                            <a href="222222" class="add">
+                                <img src="img/cart-add.svg" alt="cart" class="cart">
+                                <p class="add-txt">Add to Cart</p>
+                            </a>
+                            <div class="add__icons">
+                                <a href="33333" class="add add_size">
+                                    <img src="img/arrows.png" alt="arrows" class="add-icons">
+                                </a>
+                                <a href="444444" class="add add_size">
+                                    <img src="img/heart.png" alt="heart" class="add-icons">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="../homework2/single-page.html" class="item-link">
+                            <div class="item-link__img">
+                                <img class="item-img" src="img/8-card.png" alt="item">
+                            </div>
+                            <div class="txt-box">
+                                <p class="description">Mango People T-shirt</p>
+                                <p class="item-price">$52.00</p>
+                            </div>
+                        </a>
+                        <div class="add-box">
+                            <a href="222222" class="add">
+                                <img src="img/cart-add.svg" alt="cart" class="cart">
+                                <p class="add-txt">Add to Cart</p>
+                            </a>
+                            <div class="add__icons">
+                                <a href="33333" class="add add_size">
+                                    <img src="img/arrows.png" alt="arrows" class="add-icons">
+                                </a>
+                                <a href="444444" class="add add_size">
+                                    <img src="img/heart.png" alt="heart" class="add-icons">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="../homework2/single-page.html" class="item-link">
+                            <div class="item-link__img">
+                                <img class="item-img" src="img/9-card.png" alt="item">
+                            </div>
+                            <div class="txt-box">
+                                <p class="description">Mango People T-shirt</p>
+                                <p class="item-price">$52.00</p>
+                            </div>
+                        </a>
+                        <div class="add-box">
+                            <a href="222222" class="add">
+                                <img src="img/cart-add.svg" alt="cart" class="cart">
+                                <p class="add-txt">Add to Cart</p>
+                            </a>
+                            <div class="add__icons">
+                                <a href="33333" class="add add_size">
+                                    <img src="img/arrows.png" alt="arrows" class="add-icons">
+                                </a>
+                                <a href="444444" class="add add_size">
+                                    <img src="img/heart.png" alt="heart" class="add-icons">
+                                </a>
+                            </div>
+                        </div>
+                    </div> -->
+
+
+                </div>
+            </div>
+        </section>
+        <nav class="pagination-nav" aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+            <a class="pagination-nav__button" href="#">View All</a>
+        </nav>
+    </section>
+    <div class="sales">
+        <div class="free_delivery">
+            <svg width="44.989014" height="31.934570" viewBox="0 0 44.989 31.9346" fill="none"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <desc>
+                    Created with Pixso.
+                </desc>
+                <defs />
+                <path id="Forma_1"
+                    d="M30.2581 27.2429L14.781 27.2429C14.5737 28.5509 13.9067 29.742 12.8997 30.6021C11.8926 31.4621 10.6118 31.9346 9.2876 31.9346C7.96313 31.9346 6.68237 31.4621 5.67529 30.6021C4.66821 29.742 4.00122 28.5509 3.79395 27.2429L1.85693 27.2429C1.3623 27.2397 0.888916 27.0404 0.540771 26.6887C0.192627 26.3371 -0.00195312 25.8618 0 25.3669L0 1.87695C-0.00219727 1.38196 0.192139 0.906342 0.540283 0.554443C0.888428 0.202545 1.36206 0.00317383 1.85693 0L27.408 0C27.9028 0.00317383 28.3762 0.202515 28.7244 0.554443C29.0723 0.906372 29.2664 1.38205 29.2639 1.87695L29.2639 3.78198L36.385 3.78198C36.4653 3.78165 36.5454 3.79208 36.623 3.81299C38.9231 4.013 40.0801 5.21289 41.3 7.2749L44.8591 13.3689C44.9438 13.5135 44.9888 13.6782 44.989 13.8459L44.989 26.304C44.99 26.5515 44.8928 26.7892 44.7188 26.9651C44.5444 27.141 44.3076 27.2406 44.0601 27.2419L41.2461 27.2419C41.0388 28.5499 40.3718 29.741 39.3647 30.6011C38.3577 31.4611 37.0769 31.9336 35.7524 31.9336C34.4282 31.9336 33.1475 31.4611 32.1404 30.6011C31.1333 29.741 30.4663 28.5499 30.259 27.2419L30.2581 27.2429ZM32.0361 26.304C32.0439 27.0369 32.2686 27.7511 32.6814 28.3567C33.0942 28.9623 33.6772 29.4322 34.3567 29.7073C35.0361 29.9824 35.7817 30.0503 36.4995 29.9026C37.2175 29.7548 37.8757 29.398 38.3914 28.877C38.907 28.3559 39.2568 27.6941 39.3972 26.9746C39.5374 26.2551 39.4617 25.5103 39.1794 24.8337C38.8975 24.1572 38.4214 23.5794 37.8115 23.1729C37.2017 22.7663 36.4851 22.5491 35.752 22.5488C34.7617 22.5552 33.8142 22.9543 33.1177 23.6582C32.4209 24.3622 32.032 25.3136 32.0361 26.304ZM5.57202 26.304C5.57983 27.0369 5.80444 27.7511 6.21729 28.3567C6.63037 28.9623 7.21313 29.4322 7.89258 29.7073C8.57202 29.9824 9.31763 30.0503 10.0356 29.9026C10.7537 29.7548 11.4119 29.398 11.9275 28.877C12.4429 28.3559 12.793 27.6941 12.9331 26.9746C13.0735 26.2551 12.9978 25.5103 12.7156 24.8337C12.4333 24.1572 11.9573 23.5794 11.3474 23.1729C10.7375 22.7663 10.021 22.5491 9.28809 22.5488C8.29761 22.5549 7.34985 22.9537 6.65308 23.6577C5.95605 24.3617 5.56714 25.3134 5.57104 26.304L5.57202 26.304ZM41.2441 25.366L43.1301 25.366L43.1301 19.7478L40.394 19.7478C40.2715 19.7473 40.1501 19.7227 40.0371 19.6753C39.9241 19.6279 39.8213 19.5586 39.7351 19.4714C39.6489 19.3843 39.5806 19.281 39.5342 19.1675C39.4878 19.054 39.4644 18.9324 39.4651 18.8098L39.4651 16.9629C39.4648 16.2422 39.7402 15.5488 40.2351 15.0249L33.856 15.0249C33.7788 15.0248 33.7019 15.015 33.627 14.9958C32.9224 14.933 32.2668 14.6081 31.79 14.0852C31.3135 13.5623 31.0505 12.8794 31.053 12.1719L31.053 7.47192C31.0522 7.34927 31.0759 7.22757 31.1223 7.11401C31.1685 7.00046 31.2368 6.89725 31.323 6.81006C31.4094 6.72287 31.512 6.6535 31.625 6.60596C31.738 6.55841 31.8594 6.5336 31.9819 6.53296L38.4651 6.53296C38.1206 6.21429 37.7134 5.97122 37.2693 5.81982C36.8252 5.66843 36.3542 5.61188 35.887 5.65381L29.2639 5.65381L29.2639 25.3618L30.2581 25.3618C30.4653 24.0538 31.1323 22.8627 32.1394 22.0027C33.1465 21.1426 34.4272 20.6702 35.7515 20.6702C37.0759 20.6702 38.3567 21.1426 39.3638 22.0027C40.3706 22.8627 41.0378 24.0538 41.2451 25.3618L41.2441 25.366ZM14.78 25.366L27.407 25.366L27.407 1.87598L1.85693 1.87598L1.85693 25.366L3.79395 25.366C4.00122 24.058 4.66821 22.8666 5.67529 22.0066C6.68237 21.1465 7.96313 20.6741 9.2876 20.6741C10.6118 20.6741 11.8926 21.1465 12.8997 22.0066C13.9067 22.8666 14.5737 24.058 14.781 25.366L14.78 25.366ZM41.322 16.9658L41.322 17.875L43.1301 17.875L43.1301 16.0278L42.251 16.0278C42.0042 16.0294 41.7681 16.1288 41.594 16.304C41.4202 16.4792 41.3228 16.716 41.323 16.9629L41.322 16.9658ZM32.9089 12.1738C32.908 12.4263 33.0071 12.6691 33.1846 12.8486C33.3621 13.0282 33.6035 13.13 33.856 13.1318C33.9199 13.1317 33.9836 13.1384 34.0461 13.1519L42.571 13.1519L39.8049 8.41602L32.905 8.41602L32.9089 12.1738ZM33.002 26.3059C32.999 25.5733 33.2869 24.8695 33.8022 24.3489C34.3176 23.8283 35.0186 23.5333 35.751 23.5288C35.9998 23.5288 36.2383 23.6278 36.4143 23.8037C36.5901 23.9796 36.689 24.218 36.689 24.4668C36.689 24.7156 36.5901 24.9542 36.4143 25.1301C36.2383 25.306 35.9998 25.4048 35.751 25.4048C35.5728 25.4032 35.3979 25.4548 35.2488 25.5527C35.0999 25.6507 34.9832 25.7905 34.9138 25.9548C34.8445 26.1191 34.8254 26.3005 34.8594 26.4756C34.8931 26.6507 34.9783 26.8118 35.1038 26.9385C35.2292 27.0651 35.3896 27.1516 35.5645 27.187C35.7393 27.2224 35.9207 27.2051 36.0854 27.1372C36.2505 27.0693 36.3916 26.9538 36.4907 26.8057C36.5901 26.6575 36.6431 26.4833 36.6431 26.3049C36.6431 26.0587 36.7407 25.8226 36.915 25.6484C37.0891 25.4743 37.3252 25.3765 37.5715 25.3765C37.8179 25.3765 38.054 25.4743 38.228 25.6484C38.4021 25.8226 38.5 26.0587 38.5 26.3049C38.5 27.0343 38.2102 27.7338 37.6946 28.2495C37.179 28.7652 36.4792 29.0549 35.75 29.0549C35.0208 29.0549 34.3213 28.7652 33.8054 28.2495C33.2898 27.7338 33 27.0343 33 26.3049L33.002 26.3059ZM6.53809 26.3059C6.53516 25.5733 6.823 24.8695 7.33838 24.3489C7.85376 23.8283 8.55444 23.5333 9.28711 23.5288C9.53589 23.5288 9.77441 23.6278 9.9502 23.8037C10.1262 23.9796 10.2251 24.218 10.2251 24.4668C10.2251 24.7156 10.1262 24.9542 9.9502 25.1301C9.77441 25.306 9.53589 25.4048 9.28711 25.4048C9.10864 25.4032 8.93384 25.4548 8.78491 25.5527C8.63574 25.6507 8.51929 25.7905 8.44995 25.9548C8.38062 26.1191 8.36157 26.3005 8.39526 26.4756C8.4292 26.6507 8.51416 26.8118 8.63989 26.9385C8.76538 27.0651 8.92578 27.1516 9.10059 27.187C9.27539 27.2224 9.45654 27.2051 9.62158 27.1372C9.78638 27.0693 9.92749 26.9538 10.0269 26.8057C10.126 26.6575 10.179 26.4833 10.179 26.3049C10.179 26.0587 10.2769 25.8226 10.4509 25.6484C10.625 25.4743 10.8613 25.3765 11.1074 25.3765C11.3538 25.3765 11.5898 25.4743 11.7642 25.6484C11.9382 25.8226 12.0361 26.0587 12.0361 26.3049C12.0361 27.0343 11.7463 27.7338 11.2305 28.2495C10.7148 28.7652 10.0154 29.0549 9.28613 29.0549C8.55664 29.0549 7.85718 28.7652 7.34155 28.2495C6.82568 27.7338 6.53613 27.0343 6.53613 26.3049L6.53809 26.3059ZM4.67993 5.65991C4.43115 5.65991 4.19263 5.56116 4.01685 5.38525C3.84082 5.20935 3.74194 4.9707 3.74194 4.72192C3.74194 4.47314 3.84082 4.2345 4.01685 4.05859C4.19263 3.88269 4.43115 3.78394 4.67993 3.78394L24.5801 3.78394C24.8289 3.78394 25.0674 3.88269 25.2434 4.05859C25.4192 4.2345 25.5181 4.47314 25.5181 4.72192C25.5181 4.9707 25.4192 5.20935 25.2434 5.38525C25.0674 5.56116 24.8289 5.65991 24.5801 5.65991L4.67993 5.65991Z"
+                    fill="#F16D7F" fill-opacity="1.000000" fill-rule="nonzero" />
+            </svg>
+            <h2 class="sales_text_h2">Free Delivery</h2>
+            <p class="sales_text_p">Worldwide delivery on&nbsp;all. Authorit tively morph next-generation innov tion
+                with
+                extensive models.</p>
+        </div>
+        <div class="free_delivery">
+            <svg width="39.985962" height="39.923828" viewBox="0 0 39.986 39.9238" fill="none"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <desc>
+                    Created with Pixso.
+                </desc>
+                <defs />
+                <path id="Forma_2"
+                    d="M19.994 37.0239L16.5231 39.9238L14.235 36.0039L9.995 37.5159L9.17297 33.0359L4.68005 32.991L5.41199 28.491L1.20398 26.8909L3.41394 22.925L0 19.96L3.41199 16.9929L1.20203 13.0278L5.41101 11.428L4.67798 6.93286L9.172 6.88892L9.99402 2.40894L14.234 3.91992L16.522 0L19.993 2.8999L23.464 0L25.7531 3.9209L29.993 2.40894L30.8141 6.88989L35.308 6.93481L34.576 11.4299L38.7841 13.03L36.574 16.9958L39.986 19.9609L36.574 22.928L38.7831 26.894L34.574 28.4939L35.307 32.988L30.812 33.033L29.9911 37.5139L25.7531 36.0029L23.464 39.9229L19.994 37.0239ZM21.2001 35.541L22.9611 37.012L24.1219 35.022L24.9139 33.666L26.382 34.189L28.5331 34.957L28.9501 32.6838L29.235 31.1289L30.796 31.113L33.078 31.092L32.7059 28.8098L32.452 27.25L33.911 26.696L36.045 25.8828L34.9249 23.873L34.1591 22.498L35.3419 21.4709L37.076 19.9609L35.343 18.4609L34.16 17.4319L34.926 16.0559L36.047 14.0449L33.913 13.2339L32.454 12.6809L32.709 11.1208L33.0809 8.83984L30.799 8.81689L29.239 8.80103L28.954 7.24683L28.538 4.97388L26.386 5.74097L24.9181 6.26392L24.125 4.90698L22.963 2.91699L21.201 4.38794L19.996 5.39282L18.791 4.38794L17.03 2.91699L15.869 4.90601L15.077 6.26294L13.608 5.73999L11.458 4.97192L11.0399 7.24585L10.755 8.80005L9.19495 8.81592L6.91394 8.83789L7.28601 11.1199L7.53992 12.678L6.08093 13.2329L3.94592 14.0439L5.06702 16.0549L5.83301 17.4299L4.65002 18.459L2.91602 19.967L4.64905 21.4739L5.83191 22.5029L5.06604 23.8779L3.94495 25.8879L6.078 26.698L7.53796 27.2529L7.28308 28.812L6.91199 31.0959L9.19299 31.1189L10.7531 31.135L11.038 32.6899L11.455 34.9619L13.6071 34.1948L15.076 33.6719L15.868 35.0288L17.03 37.019L18.791 35.5479L19.996 34.543L21.2001 35.541ZM21.318 23.02C21.318 20.093 22.8829 18.4648 24.777 18.4648C26.783 18.4648 28.077 20.0279 28.077 22.7949C28.077 25.8539 26.4919 27.3718 24.662 27.3718C22.8829 27.3718 21.338 25.922 21.318 23.02ZM22.839 22.9319C22.816 24.7829 23.521 26.1899 24.7111 26.1899C25.988 26.1899 26.5609 24.8049 26.5609 22.8899C26.5609 21.1249 26.054 19.6528 24.7111 19.6528C23.5 19.6488 22.839 21.1029 22.839 22.9309L22.839 22.9319ZM15.194 27.332L23.609 12.613L24.8419 12.613L16.427 27.332L15.194 27.332ZM11.979 16.99C11.979 14.09 13.542 12.458 15.437 12.458C17.437 12.458 18.7631 14.022 18.7631 16.79C18.7631 19.8481 17.177 21.365 15.327 21.365C13.5441 21.365 12 19.915 11.979 16.991L11.979 16.99ZM13.521 16.9238C13.4771 18.7748 14.162 20.1809 15.371 20.1829C16.6479 20.1829 17.2211 18.7988 17.2211 16.8828C17.2211 15.1168 16.714 13.645 15.371 13.645C14.162 13.642 13.521 15.092 13.521 16.925L13.521 16.9238Z"
+                    fill="#F16D7F" fill-opacity="1.000000" fill-rule="nonzero" />
+            </svg>
+            <h2 class="sales_text_h2">Sales &amp;&nbsp;discounts</h2>
+            <p class="sales_text_p">Worldwide delivery on&nbsp;all. Authorit tively morph next-generation innov tion
+                with
+                extensive models.</p>
+        </div>
+        <div class="free_delivery">
+            <svg width="47.022949" height="34.926758" viewBox="0 0 47.0229 34.9268" fill="none"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <desc>
+                    Created with Pixso.
+                </desc>
+                <defs />
+                <path id="Forma_3"
+                    d="M42.3743 8.53564C41.1578 8.52335 39.9862 8.9935 39.1155 9.84302C38.2449 10.6925 37.746 11.8522 37.7283 13.0686C37.7314 13.7086 37.8724 14.3405 38.1416 14.9211C38.4109 15.5018 38.802 16.0176 39.2883 16.4336L33.4283 18.4888L25.0894 8.80566C25.9846 8.50693 26.7644 7.93646 27.3201 7.17358C27.8757 6.41071 28.1797 5.49332 28.1893 4.54956C28.1642 3.33432 27.6637 2.17743 26.7953 1.3269C25.927 0.476379 24.7599 0 23.5443 0C22.3289 0 21.1617 0.476379 20.2933 1.3269C19.425 2.17743 18.9246 3.33432 18.8993 4.54956C18.9091 5.48395 19.2067 6.39273 19.7515 7.15186C20.2964 7.91098 21.0621 8.48367 21.9443 8.79175L13.5923 18.4917L7.73438 16.4368C8.22046 16.0206 8.61121 15.5045 8.88 14.9238C9.14893 14.3432 9.28955 13.7116 9.29236 13.0718C9.31543 12.195 9.08984 11.3297 8.64172 10.5757C8.19373 9.82172 7.54138 9.2099 6.76025 8.81104C5.97925 8.41217 5.1012 8.2424 4.22766 8.32153C3.35425 8.40067 2.521 8.72556 1.82422 9.2583C1.12756 9.79105 0.595825 10.5101 0.290527 11.3323C-0.0146484 12.1545 -0.0810547 13.0462 0.0991211 13.9045C0.279419 14.7629 0.698853 15.5526 1.30896 16.1826C1.91919 16.8126 2.69531 17.2571 3.54736 17.4646L3.54736 29.7556C3.55481 29.8376 3.57153 29.9184 3.59729 29.9966C3.56445 30.1233 3.54773 30.2538 3.54736 30.3848C3.54736 34.7968 21.4663 34.9268 23.5093 34.9268C25.5524 34.9268 43.4713 34.7978 43.4713 30.3848C43.4706 30.2539 43.4537 30.1234 43.4213 29.9966C43.449 29.9189 43.4658 29.8379 43.4713 29.7556L43.4713 17.4646C44.5703 17.2244 45.54 16.5828 46.1907 15.6653C46.8414 14.7478 47.1262 13.6204 46.9895 12.5039C46.8528 11.3874 46.3043 10.3621 45.4514 9.62866C44.5986 8.89526 43.5027 8.50653 42.3783 8.53857L42.3743 8.53564ZM21.1553 4.55176C21.1438 4.07755 21.2739 3.61063 21.5289 3.21069C21.7841 2.81076 22.1525 2.49591 22.5873 2.3064C23.0222 2.11688 23.5037 2.06131 23.9702 2.14673C24.4369 2.23215 24.8674 2.45462 25.2069 2.78589C25.5465 3.11716 25.7795 3.54199 25.8763 4.00635C25.9733 4.4707 25.9296 4.95346 25.7507 5.39282C25.572 5.83218 25.2664 6.20831 24.8728 6.47314C24.4794 6.73798 24.0157 6.87949 23.5414 6.87964C22.9167 6.88605 22.3148 6.64481 21.8676 6.2085C21.4204 5.77219 21.1643 5.17645 21.1553 4.55176ZM13.5653 20.8276C13.7823 20.9026 14.0167 20.9113 14.2385 20.8525C14.4604 20.7938 14.6599 20.6701 14.8113 20.4976L23.5114 10.3977L32.2113 20.4976C32.3625 20.6702 32.5618 20.7938 32.7834 20.8528C33.0052 20.9117 33.2394 20.9034 33.4563 20.8286L41.2144 18.1038L41.2144 28.0408C36.3295 25.9188 25.1053 25.8406 23.5143 25.8406C21.9233 25.8406 10.6954 25.9198 5.81433 28.0408L5.81433 18.1038L13.5653 20.8276ZM23.5083 32.7166C14.8083 32.7166 9.2594 31.7057 6.95129 30.8547C6.60022 30.7373 6.26453 30.578 5.95129 30.3806C6.67334 29.8596 9.01245 29.1487 12.9174 28.6487C19.9528 27.844 27.0569 27.844 34.0923 28.6487C37.9923 29.1487 40.3374 29.8596 41.0574 30.3806C40.7468 30.5794 40.4125 30.7388 40.0624 30.8547C37.7604 31.7037 32.2163 32.7166 23.5083 32.7166ZM2.26135 13.0686C2.25024 12.5945 2.38074 12.1279 2.63599 11.7283C2.89136 11.3286 3.26001 11.0139 3.69482 10.8247C4.12976 10.6355 4.61108 10.5801 5.07751 10.6658C5.54407 10.7514 5.97449 10.9743 6.31372 11.3057C6.65308 11.637 6.88586 12.0618 6.98254 12.5261C7.07935 12.9904 7.0354 13.4731 6.85657 13.9124C6.67773 14.3516 6.37207 14.7277 5.97852 14.9924C5.58508 15.2572 5.1217 15.3986 4.64734 15.3987C4.02222 15.4054 3.41992 15.1638 2.97253 14.7271C2.52527 14.2903 2.26953 13.6938 2.26135 13.0686ZM42.3743 15.3987C41.9164 15.3875 41.4719 15.2414 41.0964 14.9788C40.7211 14.7162 40.4314 14.3488 40.2638 13.9224C40.0962 13.496 40.0581 13.0297 40.1542 12.5818C40.2504 12.1339 40.4764 11.7241 40.8042 11.4041C41.1321 11.084 41.5469 10.8677 41.9969 10.7822C42.4471 10.6968 42.9124 10.7459 43.3346 10.9236C43.757 11.1013 44.1174 11.3997 44.371 11.7812C44.6246 12.1628 44.7601 12.6105 44.7604 13.0686C44.7517 13.6935 44.4957 14.2896 44.0485 14.7261C43.6013 15.1626 42.9993 15.4041 42.3743 15.3977L42.3743 15.3987Z"
+                    fill="#F16D7F" fill-opacity="1.000000" fill-rule="nonzero" />
+            </svg>
+            <h2 class="sales_text_h2">Quality assurance</h2>
+            <p class="sales_text_p">Worldwide delivery on&nbsp;all. Authorit tively morph next-generation innov tion
+                with
+                extensive models.</p>
+        </div>
+    </div>
+
+    <div class="subscribe__div">
+        <aside>
+            <div class="subscribe_info">
+                <div class="for_svg">
+                    <svg width="144.578369" height="150.361450" viewBox="0 0 144.578 150.361" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <desc>
+                            Created with Pixso.
+                        </desc>
+                        <defs>
+                            <pattern id="pattern_190_15910" patternContentUnits="objectBoundingBox" width="1.000000"
+                                height="1.000000">
+                                <use xlink:href="#image190_1591_0" transform="matrix(0.008,0,0,0.007692,0,0)" />
+                            </pattern>
+                            <image id="image190_1591_0" width="125.000000" height="130.000000"
+                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH0AAACCCAYAAABrRMfpAAAABHNCSVQICAgIfAhkiAAAIABJREFUeJyUvdeSJNmZ5/c7wmWoFKW7G2IgFzuCQ2G2RmFG0njFm7kg+Sx8k30APgVvSF7sgsvFcIYzGGB2gQbQoqqrKitFSJdH8eK4h8jKqgbcLDMiPFwcP5/+f9/5Qvxv//pf/wE4QwgEcRNCEEJACIEQ41727x/ad7wJKQkQryeAAEIejgshIKXcf5bH1/iWa5/c56F7PzDGMLwdviGIeE+BIPhAwEO4d839y/hGgNjvBikBCR7iv3iNIAB5mMuTsR0uighyPxbY3/7B5wkhfPB5GZ6D4U8SCIjhei6O6fTqKw08FkJM79/0/g2+jeAnx4cwjGFgmntjHQl+mOCPE/dj47q/jcz63rgPOwBQUuKdj1M0MPxhDo4+iQfGJwQixIkVIhAipUGGeJ9wfOjD8zheXAxzFT5w/Mee+XjMEknA40TcK0J475mHLdFCCDNe4P4NxMBFQoqBfz5A5IcmRXxcI3yMeN+mST703V673BvX/rgQCM4RnMEER9+7qHWURCUpUmmkkAg5PKsUhBDPExwxsBBHd4pydSw04qF7n458OMhHbYP4o/l+vF4IgVE7CyFO7x/iPSJDv3cJox+64ClB33vznuSebFI8fJ2PfP5jufuDHH9fmodJHCdfCAHB451DB4sSFoMiyzSYlq7dYYwmzUqMUAhBZACpIn2E2GuEA2N55KhGB/MVBumKzHFQy++P9+hDGOX1w8/2kHo/MV9HCl0yao6ACDzIjPpDk/kegYbxyZGLRLRR9yXrvh/w4LU+KgUfZ5aPnTOq1hD/IYRASoECHJIkFeQSuj4gbEC5BusN6WQeLZLSKKXAe/COEDxBSKRUSCVh0HajDQ34OC9KHDTBQL+Pj3lknrC/pkTgPyBMDxH+2IxJwO8Zx8fjwr0xDPs8oI93BiE+wG/sL7RXW9xXpZw4a+MEHNsdceIJffgB/5TvRsLGSYkSHW1uiM6ad9gAQko0DilBK3Bdg7MWbwMytPSmpe8sUqdInZKWE7SWSCHx3uG9Q2mNlMMTyTgfQYz3HOj9rXp6sLmAGPyAvTf3Lc8tHtgX7ysY7NDJbR7SMwLQHNkDMajFE5Vwz3aH0azdt+/yASn/wET8qTb7/jFyT2ggeIKHRAm8DwglB2kHiUereAy+I5EKGUAGT5ElGBGQocO0FaLe4KuGunP01oJKmD95Tj4/Iy3nUYacBTRK64GhB6kX8j0J/7i2k6eEPpaMD8zLt2nj+9rgQ6YFIdBiuGl02EYn4DAW4FSV3zc/ApAfH9AfM+g/5TwpJUIJMiEGLvckMhCCxDoXvdgQUFKCNygBHo8S0NQNXV2T5xlpKpFCk+iSJBVIrXDLFfV2w2q14qvf/Yazx8+5eP4pTz77HlInONMTshytE4KAEPwgLHJvq7/NfO0nUHiORfLbtcTp9qFI5fj9SPxwdFt9PMCH1O/eVt4bdCCq82Pp/jYu/1jM+Ud/DgHnPakQOATG9CgJXgqUcOQiQDBUpie0lt50OGuxxtDnCW9fvWS72XB2fsb5k2cU5YQkSfDWQZAHz1sqmnrL6vP/yOuv/sD573/L0z/7MZ9+/we4riM4T5rn0fsOjLbvxK6/N2v75x/tntxr1vse+P35Yn/JQ6wwfv+nmkQ9Xu3YM33P7Ri55ihsGz3Ub7vJn6LaPyT5e6AI8CGgBUgRML0lkYGyLFAEFI5EOLrGoJo7tqsly+WS5d2GIDVlkXN9c0Pb1CRScHZ+ARS0TYsxHpkm5JMZpfVUTU9e5Kx2Fc4H2ldf8dvf/57v//Rf8uf/+b9isTijbRvSLEUpHYkTbcoD83Z/O8IABg37IfV+PCej+T/YcBjY9IPgzkOblkKcIlaDfYk3G1TDoADkHpCIBN9rhnva4E/11h/axMHuIIVEiWizCR4ZApBRZIEi0STKkWlJ6HvqasPmbslqteTd22tev33HtmrJiwmzMqHvDZ989imf/dn3ySdzrDF0fY/tOpq6om1arHVInZDnBUontNahdYIzDf/893/L1Tev+C//u/+BR88/wYSAKjVCyOjtD07jfTN5DL6cSGcggjv3TMND2ymdxAltjtG+E+3wkKSP9vp4cIcDD8SUHJy48eAPaYSP3fD+9x+DGJUQ+BBQMj6jxqJThcIidCCXgkx5EuFxbctuu2W9XHJ9dc319Q23qx1Xd9uoJWRHIh3Pnz3hk08/JUhF2+xihOsDnTF0vaNpe9qmI3iLtT2pTjDWUjcdKkkolKJa3vLv/4//nb/4L/4Vn/3opxiTohONkIMTGcIg9Eda7QPzMjL38dze951GEj7ojf+RvtLxpkdpPSb8/ub7UOGIKfaDG6X+mDU+PoiHiHysUUb9KMRhHGM8m4SASBSpFiRBoJUhwyG9xzlHXVXcvrvm6u0VX798TW8s3gfmZYaxjvNZQZEqFJ5qeUNSlkwXlxSTKQJQOkUIjbMeKRXWBYJMoq0OAecNdecoixwbPDd3K/7xF78gzVIun71gdv4Eqdh79SDw+D3k7IfnONGJQkA4sQcx1AwQxHDs8H4Uc39y+p/m+I1bBGfe994G0xTYU4ARih24c1S/R3bsITX+cekPJ++Pv1NS4HwgVaAJeNsDGi08mYJMeJQQBCTrzZovvviKm6t3uADnl5cE71Ei4Jyl2jVIKTg/n/HJJ88I1rJcLcELrA+DeQxkqUIsJqyWNo5HSdK8xPiwV5tKCCrjCSGwXC351d/9PT/5mSEr5+TlhBAcEj2o8MPTDdmGe/NwFOKKyF8HIWTYMeD8IlJgvE74QLj20CaOnD8YvPcTCTwiR7TdkrBnAvbid0hUnBL6PsE/zo1HD7zfF1BCIsXgjUuP1govFcL3lMJTZhlCaHZ1zc31OzarNbOyYPa9z3DeE7ynqXbUVc2u9hGY0fHRnfPMZnOaumG320BakBUlxvTY3tDVNbbvwTuUFBR5TtV1zBdnKFVhnY1gTQjsWs/LV6/Y7SqCVnz/Z3+OVgk4hxrwAgaMPM7H+PGe2hcPOfxiUKsD2BRF/kTL7o8MPIjo7T+Gkxe0kPJE5R47CVIMKN3olYyZGyGQxzH90XnfFjeeDGoIdY7x64iihQid2pbeWMhyUh0opSNPNSHAer1kV+3QSnN+cY41hrzIQUiWt7esdh3ruw1N22K7HpSkqls2u5aL8wWXj88J6w2rt9+QP/mUi8WMXih22woXJEFqTGdQWvHZ88e8u12DTvE+4IC67SnTFOsDt8sVf//vfk5WFLz43p+hSOL8STko+lFkTqVfCPDh8Ox+1KT7CTlC6/ZfnKbAR2I+JOf7fQNnCQZt9b/8zd/8rwKKUd3IgYDyWI+feJaSMcQTY05cgBDyxDc4HtQJFnCy70iVSVBCIkJAK0GiI/GF7chTzSwRlEm0irvtFgHkWY4bpGlS5Og04/pmzX/49efUdUuwBtM2JFlK21u6ztIax+3dmrpuyMsC09Y02w02KFSaopSg63qcdQgpWS2XbOuWosgRQKIUSRqjgM4ahIDeB1arFbfX11xcPGI6nRGEIDgbs3ZCcc8uHtT7UcglOcLwxVEAfaIZ5OG8h5TooJ2F+KB/1e6JvifkcKI49qb2hB1TppIxJSj35w0DkQfiPgTcnLwXY0goUEKQyqi2UiVQSpKngjJVLHJFoQW7uma93ZGnCUEIOmNJE8l0WuIDfPG733Nz9YZHFwtmRUqaaLIsQyUaGQJNZ3i33LJrHZttRbWtKIqMxTRqiK7rQQhs39E1LTZAlmUsV2tefvMW56IjN5uWJElC3/V0vaHIEqSUuK5ju7zlk+/9gHIyiWlcYuqWwWE9mRMikjdM4kDOkQUG+p38HWhyUpBxPN/3HfP3Cd/KOOnjAI4JfuDEI1/j5PWAvor9/5FTv021c3SGBHI8aaKYpIIi8eTCor2loEe5nrvlHU1VMcmzeJrzTPKMLC+odjVfff47lBScXVyglCRJU4rJhLPzGZezgsW0JE8TijTBm45d1dIZDyojm5wzKTMSPHmWkucFCEHftnR9z2w6oUgTbpdrXr25YrttmJUFTx+fk2cJ27pFiMioX7/8ml/++59j+g7nPUh5EKYQcYY9NCoCxwG9FyNc+mAe/Gg7ioBODhwY617y5f78SwZCnbDUeAGxv3x0Qo4usAdo9mpavIfB35f0Y24ctUYAtBBY7+iaiuAsAfDWkbkaReB2tcZ7z2Q6wRGwLlBMp0itaaqaarOhmM7orYMQyIqSyXzOixfPuLhYIJSkbRv6vqfrDBI4zxMKDUmSkJcT0jTBdzXV6o7JfMr8/IwgBevVls5YJrMpWZayazq+fPWab97eYKznYj4n0YrOGEKARGt+9ct/4G//738bfWbn8H6s0JGHuRrmfQTyDilbviXrJvb0GD8d7T4w2P2zhnmXRH8scqk43FaM3iIcxcwf8MQFiKOY8j6x9wxyfIo8XFMCWkKqIZMBJQKJkKTCIoNjuV6RakWWJHtHcjqZIL3HtC3bzYa261hvNhQDsaezGRcXZygJfdOyvNvw9dWSr9/dsdzuSBU8v5xSaklfbTDOIZKCi+fPURJ2yxUiOM4XCyaTnJvbWzpjUFqTSIlSkm1VcXO3Ydu0zCclaaJpjSEAven5u5//nP/4q1+TJCnWmojtj3n+Y2oJETN/xL8js/8Rksv3DhJC7JVGEPJ9f4q9hKNHf+AEiRsACbl3Fg4X2LsX47Hh2Bf4gO2+vw3cnUiJDB7lauSQBVN4vOvBtGzrLUppBIEkTZFSkklJCA7rHKv1GmMMXmim8wWToiAvMtI0ZsN659isdrx+t2S5aRDe82iS83wx4dnjc9I0Q6cprlqjJyXOK7JyhtvuwBpkcJydL9jVDd+8vWE6nQKw3dVIqanqFus01gfmZYGxhqrtmOYZxhh+8W/+L548e8qzTz8jBA9BDRU2h8LMMYY+zXt8wEkbvxtrB/aHij2k4sdTB7o8mGU7Vuv7ZNFevYi96hlPiNwy3vAhHfNhgotRnw/D8CHmu9vOI11PmSqMM2iVIE1D8B6ZqShhOonYtotFEbfLJdY6VJriredisUCnyT6d2rU1N29e89XLV2y2OyaJYjpNefr4gk8eLfjk0ydkShGCp+0cpm9BZwgpkUlKKgSb9ZZmVzGZzVg0HctNhXMWISW7pjkUVzrP1XJNmmi0lIQgyNKU7XrD3//83/Df/83/xGQyOVBjnGMJY/HD6Tx/GGgJIiDCA07aILkR4DlAMfcJLxgKefckHnGEwaEbuWhU8cc2PxIwHHHnQWMADyJERxoNJcb7xVhWBosnonB0O7abDUmakSQZRZ4jlaLve6wzXF/f0NV1JJDQnM/mkeBCkCmBNB2r21tevrqi7y3zIuPTi5JPH8357rNHfPL8Med5yvOLBZ88fsx5rpmaHYVwA05gccZSTmckEtq6BiFpuw5rHcbEUiqpJV5IpIo2fVt3KCXpnSUQmM5K3nzzJf/4//xbnIv+xlhouZ+jwZnbky+IU2j2/hwGiRCSII8SZYPWCELuhffknMHcquEEjRgAmHBMPAEiQgWHyrDTLcAhTj/SBMdhw/0bBxgQn4CWguA9PgRkcIjgEUKSikC9WaFkwAdHnicondC1Ld57blcrbG+QOu5P84xURwmfFDnYnrpt6eqG81lJqUA6S5FIzs/PuLhcMDufc16WTKcTvLMo+Zibm1uEqUiD4q41BNuz3bXk0xnT1rDa7PCA6Q3OObTSCKEIAXpryHRCawy7tmeSpZgQuMxTdruWf/zFL3jy7AXf+eFPkHIgUBbBm7gGQB2SGnvETg3y6vfzt5942OM2xwDNiWkYkMBjpDUMwqxBDLXXx6p6xHzjZzkY7NPo4AAJivv77mmdE+0wDhiBUoJgOqTrKPMUHwzdboWpVqSLM2blFOEDbdXgvOVuvaVve0IIlJMcpROSRCEFTMqCTAWq7ZZmu8ZUFdubOyYy8Ohixtlixvn5OZPLc4qypCynZHmG8A6ta7xzmOs7FvmUm9DzbrXDOEvrAk5IzoqMpRI0zpEmKUJA1/dIqWh6SyJjyFa3PVpFZ8/aQFlkrDY7/ukX/45HT5+SFwVKp0gSpFR47xmLKfyRAx2l/31wdqS2FGNZ5WGeR6g2iFOhk0cWBUZH7ojL2IcWA9Mc6+4Ht4FBhCA8NEjEyUv0XqNTAyBcT5GloBOEqenW1yglWSzO8N7SND1CCG7v1lRVjVKSrJzEIkUBWZoymxboEGi2a6rthq+/eMXm5pbLXPHsyTkXjy5ZXF5QThfoSUmaZmRZidIMNlwzN5au6+k3FeeLKd+8vaF3ga7p6UJg11vOZyWddXTWY3ob2V0GpAQ3sL+UsK07JnnOqul4djZlMZ9w9fY1v//1r/jL/+q/jsS2jqCGQsvgGZLXR7P3Ybs+SuP9yG7YuyflKOUjJj/qZTn+HyVyT/D9NqJJp/ZcDvZ9fD1RL+PYxMGlGO2KFB4pAt57lLdMUzWoHIfqK7zpmJ+dY52hbWqctdzcrbi+uUFriVKKVCmUUixmJfMiI3jPdrulqmq++eJrbN2wSCWfPLvkxXc+5fF3vs/i8XMmZ+fMpufk83PUdIoqY6yvZEo+mTCf5KS+J/WWR4sZddPQdS3VdotF0gdJnui9M2sHs5RqTZZmeB/QQuC9Z11FjCEEOJtOmJUln//6l9x88w0M2Tpv7TBRHoSPwrDPjtwrnhzn8ETjvi+JQR4Vuh7hIiPESzTZg00I4oFr7D24Q7x+D3A5VgVjfD8eB9FuSUGsJXcOHRxCCgpp0AosCqkUiW+pV7dM5meoLKevG7xzrFZrXn31NWfzOcEHkiwl0YpZnpIqiXEW0zS4vmJz/Ybd7Qptep48mvP4xTPmj58yXcwpJjOy6QI9nSKzHNSYKVSIRCOlpCwK5lmKr1Yo12OqivWuwfQG0/ds64jiSWI465zHeE/b9SgpEFKgZFwssW1bWmvprcU4WCxm4C2/+Yf/l2q1xFqLJ2CNBY6crxGlE54x8D720o/5YO9RHdPkPTbgJKoPYvDegxCIwxWO0LORnEex3gPbKe3vaYR9nlyS4JDekQmPEOB8QIjAJBG0uyUIsM7h+xa8pWtbvvziFednZ5GRlIqaJTiMtezqBu8srm/pq5rbN+/o3r3jyVnJs+98wvzRU8rZgrSYoIscmaUIqRAi7JnQ9bFwMkiJ0Amz6YRZorC7LbNUY/oIxfZty65qaIzBBgjBkWiFcdG8OecjPuAtiVLIINhUHW1vWW63tF2PC571zRW3V2+otmtMHX2JaNdHWx5n+hBJ3/OH7v2XRz7Vg3mOkdgcqfmwdxhG9cHJCXKvIh6Q8r3KF3sWvB86+gE4yLQgTTVSKUzfYXxAETF213e06xXeebRUcQxK8/qbKxZnCybTCcE7grckgzaxpscPRNstb7n95jXrl6959vSMJ58+Y3r+hPLskiQvUSpBKo0IgeAtwVjoLb5r8c7ig8c5j7MWlWUspiU6GITrySUYa7GmJ3hH3XU4H1BSRUiTuFyqMz3Bx9W4Wmk6a9k2Lc4HdlXUWkopvLO09Q7bR1/Fe78vrwo+DMjdgaSE99G3/Twfh3of2N4L39iXcYkjb5y9tEeX//guI7JzqkrG7NqpbR9wpsH7V96AdzhnCSi0lKRKkCvB9uY1hFjlkuUpPsC7qxu2VU2SaWzf0XYds7JAK4F3nq5pyBRsV0vqzZqrr15SpoqLp4+ZnF9SLM5I0gwphkU/zhKsJfQtOEvo+7jCpe2wdYvtWqzzOCGZTKdclhmubVHeYbqW3gWUiIRpuhYXAlqriA0kyaCVY16A4EmVZFPVtKZjNisx3tMbR9N0rG7u9lptxDsYij+8D7EAdJhDIeLfQdAOBA9BHJI07zHFQWN7cWQWhEAKxkT/KTcc0f9k/wGqPdj7++dA2K85lyHE2FQIDBLnHX1XgWmZKovZ3tGv7/BAXpQEZ9ntKpbLFdPZFOUdznv08AC7qsY6T5Em7LYbdusl65tbXNMynU7IpxOSLEdLFbVDCIQQ8L0hmB7X99i6ikTuekzfY/oOa0ysunFx8eKL5495NC0JpieXAuEjuJJIiXOeuu3wgFQxClGxAIEs0TTGkCU6ooMIFJJd3SGB1lhefvkFpu3x1kb1PowRIVBaHQGep3N8WkX7kA/28HY/zS33Fz864KGTjgl/gGSO4/IDF0av/cj5GLg4BFAqIcFTipgy3S5vCDrBBAnB07Udq+UGLyTTSUmWZzEPoDVt2xOEJMtSklSzvr2j2my5fnMd8/FFSppnaKUIzkJwhOAILoIcfih1Cm6QKmuwtsfbHu/AWxuP94GiKPnOszNmmUJ6jx5AEg3kWuO9o6oajIsM7kMEk0agSEqJ1pKqM9H6hWhGpRTc3d7w1W/+OQJO1hJcLMYMIeBdvM9x04Zjwh12HBD79xJaHyL+8CpPEJ17xBdHNx5DupGy+7PGXWFQ82Gs7BiWyg75ZE8sc8L1ZMKhcdR3VzjTIdOCpqkJpqFpGrZ1Taol02mB857lcoMxHX3Xo7QiTxTLuzu2my3rmzvq9Y4sURRFROckARE8wbvBpPRYYwjeRzVK/M4bgzcWZ/1Qsz4s51AKlSRcPjrjz55dUioIzpHrYUVKcORJLH311uKCJ9HxOTvTkSoFPpBJSdN2tG3PahsXTRBgVdW8e/01y6vXGNPjncX0XVwiNZSMfazQMU79GIaFvclVgxAGIiBzX3uPWbg9VeVD0v6BJTP3kaC9T7B3Ocd98WgXwAWPCo5MQS4dvu/ouhYpFevlkkxphNQ0naWta54+eYTpLTd3G+q2o+8NTduSCAnes765ZbNccXt1h/SeIk8piglJkqPTFKk1idIHiZEKHzz4QHAR/kUQwRmlYmipNFqpKKlKkaQ5z56c84OnF5RKYHpDpuNChuA9RaojBj9MfyLlYNPjAo1EK6yzGGvYtR11Gwsr2q5ntd5gqh3VejVMk0AKNZRXfYjoYgBmxXG8tte+fvStOUCuJ1VNY8z+x1e5PKA2Rsdt78SLvXoXYwmQj8wTveaOYLv4cMFHKUGyWa0oM03Xe3rr+e5nL0jSlOXyDtsbzhczbm+WJEpRFDnLmxuu3l6xW29ptjVFmjCZFBTTkrQo0UlKkmQIIWPsrGODgZisULHhQJKi04IkzdBpjs5ztI4rUpMsRWcpWaqZTUo+e3LG9y+mqOAxzpENDpzpLYmSCAltb2iNQQoR0TkpSJQmEdD1ht457nY1nTEIJbm9W7JZ3tGt7zDWohL93gQ/mLQK6gC0iCi9MhykWAwa4L4zFkZnThytT3//6uIQO46fGe31adx4Itj7+wzev4jF+8g01qzLDO08tjNY59g0jrOzBUmes17tkATysmR1t8R2jt22xrQNTd0yneQE0/Hq1WtWqy2hqsA5ppOU6XxGMZmSlgVJUaJ0EpcUy4hsOdODUjFOD55xHbsXAiVdDKl0gGAwoUdJhU4VeZFSFhnff3ZBYyz//G5Dh0BJifEW2weE9IP2E6SJhBCwXpBrjZIK6x1V15MImCQS52IE8NvPf8vi/Jx2t0EnCVmWRwEZJDLm4I/mHjisdH3fgZYjmPdBog7HfezLk1KnE4Ie/sY88L7M99hH2BM+hg0iSdECrPf4rgahsLanKHKMsWxWa/IsZbNcstts+PL1FdZ03K52XFyeM5nNuX13xZu31zTVjr5umKSK+axkMpuRTiYkaY7WaUxqKIXWCqkjvq7SDJXGRIcAhJYIrREDg0idEIhZL6EUOosp3TxNOZuV/Gc//pS/enFOBsNyq8jULsSOFErEcHK0cM57jHV0xuGcZ9f1dMbGuN8Lbm5uePXlF5i6QiBiBOEs3npijbtkzLaPEOo4nyPO/hCR70djHyT6e97hPdUyfn/i8B3tG+K5o7tF6yOJ6iTFkUR7QhI8tuu4vVshhaTIE9abCq0EeZawultzs65YbXYkWgGCx5fn4Czvrq65We7ABbxxlHnCZD4jm5QkWUGSZdFGK4lQmqA0CIXUirGkKI5XImSCEJLgTQydrMG7QJBykLYEKTXldMJiMediPuM//dGn/PjxlJSAc0N1UQAbAta5QeMN7cJCQClFohWJUjTWsalbcq2pewMEfv/FF9y8/oa+rSPT+VhX55wbulYNpNgL0/sSHsTRcqfRHYOTdPkxQ7xn04+JfPy655J74dtI6zHbBtEhEUNCP9pVcFLTCoWxluCh6yxd2zHJNH1vqKuGcjLlbrmOcOWm5vG8ZLXc8OhizmQyjcjb3RpnPcp7ci2ZTAqyPNa86zRDKMVhOOIgBs4TrMXbWMcmlMaZHtvW2LaLwIwPOCQ2CCJeCFlWMFvMWZzPmU4mLKYTfvbpYz6dFWRjc6EA3jmCAONiFJAqcM4hAK0UqYqef9Vbgo8ZutYLdruKL373Odvba0zX4MOgOcSQSw9ykPjDCpZ9LRwHGgkhCHJI2RyH8uGg9kdu+LBNH48JR43+TpyD93lIHN4yKv3YFULi5YBRe8A7rI3FBs70NH1P33dkDSzvllRND8Gx2/UorVksFhAsq+WS67tNLLqwltlswvxsQVoWqDQDrQlIvHMRTPEWpBzahsgYwgUHMsE5g21qrOmxvQUhMMbSO4+xBjuEYmlZonTscKHyhl5Kzs97vvd4x7a3vKt7Wj8sKxqqXkGgpEapiMlb5ynyjF3X0QZPoiSFhl3bc14WvPzyKx4/+y2TxTmTxTkCERlbgdRjYBaXiu/pMhB0dOZgqI+75/mPzauOQ7ZDo6H7B4+NAO5J9njsKb33Fufg0e8vROxHE0IER5DYqqbZrlHlDB8kVRvXq613Dc56NtsaLySbXcPlxRkKi6krlncr7lYbHuUpWSJZXM6ZPTqnOLuANMMHj/U9UkTv2rV1fA4pQUicteAtPjTYvqc3Hbaz9E1L0FELOaA1hu16Q9MbkiTDO8eu7tjsal5e3XG33uJq8ZimAAAgAElEQVRVSp5lZL3DW4cJEhmgdw6Po+0DkzxFDRMxVvR2xtD2FuGhzBUCD97yu//wa777ox9TTGcoNChx6J9zvLxpnP9RnXEg/FgMMxI4iIMfeLxe/qSl2Ej4b0Pl7u87EPuQsx1t+lHOECklVija7YrgHdVuh9YJbduQaMlyvaPvOm43NUWWYq1jMZ2ghWezuuPdzYa6c9S+4calTDrHvHfozY4ORdr1JFqhpaDMc6SQBNsjVHTYQu+HRI3FBmjqmr5p8T7QDMuPb1YN15uKu01NXTdDzCuRwZEmmq5pqaqKqu3pXcAG8EGgBLgAqVL03uOtpzWSWZ6iBvpkKlbKWO8jlm96JpkiLybsVnf89h/+jrNnzwGJVgpnLCpJBqdu8OrHOR8cqVGS947zAJKNK4zDEW/sif4ehPcBW/4x4o8O3Bi6yRChRHyIYQdxFar0nq7vaeuazXqLQRGAcjpj18T05VdXS4TWrHYNT85nlKnCdQ3VruLdcoNzgau2o1l39DJl1QWy7DbG3gRkCEyKjKdPFjx9fMGkyEnzjCTPCMZi6x4vJMb1bDdb2q7FI7i6XvOrz1/y+Ztbdm1PZSyZVpRa8eKs4HwxReDRWiCLDOs9sjd4oHd+qOzVKBnLkQSC3hhMkjDNNc4Ty6icjAscZKB3sKk7FhPPbDbj7ddf8u7rL3j82fdQaQKEmPlLMkZIbL/q9R6xI1MM0r6P04cMqhBH54tvt+l/zBY47rowdlYMsRGRj7KfMOSNbQ9Ssd01cT0Ygrq5ZlUbdlXLruvJnGPTWn783WdoHE3VsNt1bDZVhDdD4LJMOc8UZfA0mx3rxgyqO6C15Ob6hvXTO549veTi6SNKKZHWE4LD2J7NZstqXdHYnqrt+d2XV3xxdcdys8OG2NbkxaLg+fmU2WyCDYFt1bLqDJump+o9DjkkVQK9c3TOo6SkSCIgqqWkN4bOaM6mE3Zdi+gNyVDZi5KERLHc7pjP5zTVjt//0y959Ml3B2EReO+QykdVLwYzuQ/hwt5DH711hvg+0sAPx/kTAX2P6B+S/A8eJ8bbH7opjjY9DIhY8A6waCkgTWE6gxC4W62YTCZsG0PTGK7XFW1v6Xsbm/yJ2HLE28B6vWW1a5kWKfNM8/R8yiePZsynJQKoqpZ3yx1t20eJ71q2N0t0CEymRbSVaQY6od+uadqGbdOzrRtulxu+eXtLV7UssoQsVeR5QpKlXHWOf3p3xbqqMd7T9CZCxsQ2ZUiBVgrhPNY76t5iSSk1aA9KK+rOMi8906Kg7R1CBLIkx1qLkGqo53Dxft+84vrV13z243+BVAovfCS8lANwMxDAD+o77j7FUfaNix7oYISP6v3DPUy/nQHEfv+gYoZa+DCsXQqA9rHEKCYqNGWRUCaCjbHYrqOzcLfZ8fpmxbPLM764uuW/+cufcjabkCrHdtewXG9ojWGaaSrg7a6lebdC3FYIKbAe+r4nF4K5hkJLUjxut6PfbEmevyDLUwISY3rSLAVRsbxd8+XLN6y3NZM8wRNYG8tWJoQguN1suF6uSJIEqQRVaxC+Z5bF2j4fogQqIbAInHds+54QUqaJwhiLyhW7JtYDrJSk7zsQUOpYq58oQVvvuLy4xJqeu6s3LC4fc/n8E4ILeOewxLTriAKMAneg6ZAREQKCGMrfYs3dPi0zkO/B3rAfw98f+n6PGI3gR3B7h04K0CLgjCHFMbMbNru4Vkx4S9W2vL2tWW8bijznblvz6HzGxSSh362RaUpVtdwsoyfeGEstFV9s17Rv10gt6W3A+cC0LOjbjp88u+D7C8ljFUikotrV+K5BX1yg0wKcpdqWZOmW1WrLN3dbVKKojGXVdOTnZ+xaS5COX37zFtF3PJnPkDoWPyIlKI3wHucdUkCZKmzrUEg666hDhxYZuYoLNN0gDGWW0rQNmY7w7CRNUVqhdUJVV8yKgtWbb9g8ekwxW1DOpnGhhI9dXfeu875BwRHwfnDdBqc80iAgCMLHtQXHTPNtBP+wA3fgtj1kOCyKTwRkwaJsR+oaJmaLaLYEZ0i1IJWB9aahrhq6Adbc1S0//eQJOIsS0DYNq+WaqmlJZayRa33gbdWy6ixGJJTlhDLP6cs5v7665at3t7wz8M+v77itOzoEpu/IkoSkKMknU/IsQyPZ1A03Tcey6Xl5vcJLzV/89V/y4+99yle/+S3eOn78eM6ff/KE710ukAEKIdAIZlnCPFWcZQllGosmoqAJbPDUfU/vHbu2BwfGGvJEYmygMw4tJdZGX+fy0SWz2Zyu7+i2K1bXb9ncvsH7MLQjl6dZz8AgyYeZj/S/H2IHYqXtIZD+YBfoj+3fE/zouEDYtx0bO0RBQHiD8i2Z2aGaW/qmjqiY9XRNx2bbYZ2j6QMT5bhYTOOgAriuZb2p2GwqtFI8LhLyMme7rEFpkhD4T777CYuzM371//0t//D7d/zocspff3bBk+dPefMygEw5uzxDKE2Sp3D5iDRAUd6iZcDjuZiVTFLBZ+czfvLD7/HJWUE3/Q4/fnJGF6AMlqubJV9e3fIXnzwGb5lmmlQJjHU0xvJu25ApSSslrXf4ILAEWusIvkWGQJ6dxVBSCjrrSLRkkWSI4NFpxqPLR3z9u9/gg2dze83Z5SPaiydkkykMkO4IeDH24D9pWDfG82NLmZHgcU1sGI55L2T7NmKPOfMxNj/lKvZRugyxLi5pN4hmC/UN9e4OEQRJkmBsoDXRuetcHO/b2w0//PQJszLHdg29azG9YbdrOCtyFrOSi0dnGC/4/ovH9MbwIlP88PkFf/XZ/8j/TCB3HROtyLXgr59PmZ1NePz0EZPZApRCTs7BevKyJEtSzmZTysWUJ/OS81l0DCd5hD2fpFPaumG7a+jTQP50zqa2WGd5cpYzm2Q0neXduqJ3gW1nqI1FWcewMBnjXUyv2liONc1zFtOC2/WOrre0nWGepxjTM7t8xOV2zfbuOnavto56uyEtJkOJtdyja+EoBDtJmexd+REhVYP6D3v6PNjk//6++0id/ABTjGFDkEDw5L5FCZC+pV3eQLAUkxk3b+9YL9e0vcW5yERnk4y8zPmXnz5G2Y5JImg6R9carHU8mhb87AfP+O5nz/jrH32KyHJWqy0qy5jNS7RIkc6CkZiqgtaST6dMZ+dks3MmZzNkMYU0gyRDEignU549PiOkmlQodFbQdRa6FVoGTNfRty121+C3DabtmeiEZy8uePLsDCFgta7oesdZ2XJXdWxbgxI21jq6gJcCZMA6z65pcR7OpzNeLzdoqTA2JmnausI5z9mT52yXN/T1jnw6p9uu6aYLpmeLg5suRr98IP9Ak2N3/GSp2hHB4Vvi9JPU6gPQK0d24ujaiACJ78kkONfhlm9JJxO0N3z15Tcs7za0dRs7NHaBurXUneE7zx/TNRV3u5bvXhYEH6iqjnmR8vxyzs9++gMuLua8e3vFrnOc5wkkirBZR/zcOlSSMpsvmD55SjEtSdKUcjEln5RQzkEkSOfJZufM50uens8JiUZJQVYUzKaLWN3qLV3d0vYNXdNzua1Qecb5+YyyzHHesN1WdLWhzFLOipxZ1nA7FFj03g1IXMw9aAJV09Db2KNGi7hC1wbwXrC+W7FZLZnNz7AerI1tzSbnj9jevkGnCcV0RvTej+06CB+OUdoj+nBy3LidYO/Hrx+r0QpjqdFxT1MgFvJIVLCI4AjeoJo1KsvAB958+TWmd3gBm9YilMb6DqwnyyRz3/DNmw0vzmd0dcfdpqPpLU8XJbMy4/HTS/rOMpmdMXlUYK3BeTCdQ4VAWkyYnJ1Tns1JVBLTupkiyRNElhGSHIQCpVBZSeh6ykSRlBn50Nh3UibMZuckabIHtpyPaVNvehjajFTVmooK7wKJTpkUJZOsJhU1e8cKsa9pV0LivGe13TAtJ+R5RrAGLUEp6EzP17/7LT/4yU8J47LorkLKp6RZTr26Jc1ydJYN0OrgtYvjfPtA4RMBP4JKAT6GyH3Qudtz0QC97vO8gPexj2uIrTtDvyMxDSYE3r58TdX0yMmcZr1j1fRIrcmzhNILPrsomeaxCW+mLHUTuK1ajHPkacKjsxmJ1NRdQ5Kk6Kwgmc6QKkWneexUUZQDciURPiDTBJ0o0JKQJAip9xGGDwFjLXlRUs6mTKcThLGxPo646EIlKULpoSbd4LIMU9d0dUXoHaEPIBLAkKQpkyJH6YiIKTEq3/jf4QlBsqta0jRlmmhqa5Aiopl5krBe3vLyyy+QUpLqAiEUQknKySXtdkVX79BJAkdoWwTu7tPqRNHvCT7a/z8Jhh0LJkb7MVbUjO9jzb4nCIW0PaqvcX3L9et3VKs1IslZrrZUmx1OSqqmx/jAYloyL3PWrWOROnKV8Plqzao1nGUJRaJ59viMZrPF9X1czDCfkRczlFLINCfk+YBuBYS3kfCpjqhgnoBKCSolNqzL8L1B6Zx8PkMXGYgYPimpY+7deWQiYGg6gFRge5zSmM7Stj2diV46MkFqx6QoSJWK+/ahc1y8YGzsKWe8o+kMUioSnaCEoneOxCvKIuP2bsmszMnLPAqtjCBQOjuLLUiHen5CbDwoRMzGxVaiHi8C0o+IKOyTXoJ9eP1RR+4haT8m+AlPhRH5AbyjVIHE1lwv19wtt9SNYbeO4VkymRHkktZ2zGcFksDNsqIsczSBL25a3lR9XA2jEy7nE54+vmBdbUnSkjzNyPOcpCggLyDN4uRYi3AWpEZkafyxFimiWlcJJNlQERNVYDqdon2EfQOBtqopA+iyRDmLswYlJEEpQhC4vsdUDV0T/ZEgU4Sw6DQl846yKFBK44aOE2OyY4ymPeCDp+17AkNjhuG73nkWSrGqG4o8QwaHbWqCD+A9WVli2wYXbCSyk7H8b1zpOvhY8p793hM/yH3k9cf/WtNxWu/+sYeDCMGQiMDEVuzubnn79ib2buk6nEzwwXJ+9ojLyw2tC5DmeOvoveVxIvjD7ZbrTYtFsEgkwhv+xQ8/xblAsJ58XpBlGpUXMJ1CkscHto5gXQxV0iSiZkIikoygM4RWeJ2DygCB0il5UVBay2q74c2rN9y8vuLFZy9IigIpNCJ00TNOEpx12LalqWJP+N7F6ZZSIaRH6xyl/UDcuFxp/KVHHzwIjQhiL/U+gHOGPFGkiY5VtB60lnRtg8sU409vqaHJktIJtm3JyxleDr8cOcrcPYw9/tTIXlRPzPy3qvfjxMpxYUU4PShK+lBXroVDNluW6x3XywoTJOV8Tt32KDS16TkrMz7vDe/WFT968ZgXs5RffnHFqvdILbjINdo5kjLn/HzO+vod+WRBOZ2TzM5Qs3NCVsSncI5gLcMSmphi7BrwljCZQ1ZCOoGkiMfoDJXHTlRl33G3Drx8dc2bN7dUVY0OFvH4Mb6YkAaP6DpC12OMoWtaemPouxhKelQsclBhmCMGwRP4AHpYOGatRysZJd0alFSxHg/QQtKaaJI8Eh/Auj4K7/jbcECSpvRtM4Ayg00fAvOwX8w4hNhh7GMk9i5YJLofwK8PFE7EoyLWHNXEKRgzEj7G5z66FlKhTYWpt7y7WWJVQnl2iV1dg5BUrUF1ayZ5zneeXvKbl1eUoeOLq5qVg8fzEmsNuZSse8fNNq4OyZ0hvywoZjNUuYhgwLYakjyAtQxJa0LjsfUO3zfoM4OanhF0DjIB1xOkRuQ56WSK3u5IhOT88QWN8/z261cDliF59CiQ9j3Kxx8CMl1PXVV0xtIbS2s8XUgIKsV5iw8C4yyj8zR0ZuNQ1BYdyNZaiuH3WLWKv47qfaBqa/Bh6D0voh+gVEQnXawugpiAGfsQ7jlisNeHHjNDkkUG8NHEjGn490K2DxF+/M22k+hciCPVLpEyVnJm7Zrrt+/YdoGQZkgVM1vGC5z3lAlMF3Medxbft3gl8FnJIyySuOJz3VluA7R1y9vbFT98fE4+naGSFIIj7DbQG7wYV3kKglAEA931O1avvgStefHffi/+4K9KCFojuhq8IYhoo8dKmvligpDwu5dv+MPtBv3lGzyBWVmgBolpqpq6t7GcatfQBo1JE5xUxN52hnZQ3XuahABCkmpNIgU2AE7QOcMkT4eGRbGUureeyWSCCA6QbFfL/S9BahXVvRx+SWDvQo+KeGggd0DrhvdDD5qDsMs/ojByz7eHzyMTcIz6iOjppsZQvf2KN2+u6HpH1RmKNAGlCd6h8CRZiXOeruvorWPTeGw//BJDprlue77etRRFjO9f3W758+++IMnzOJK2IfSxC6OzY7kw2OBpthuWv/+SN1+/ZPadT/h0dhYXOTQbZNfA8hq/W9Hf3bK7vmZ5u+SmEay24FvDNC/QMvDN3RIhBS+eXZJqSXBxFYvxnrpu2XUOoxXOOjwCH0RsXmAGAFbEglI1pF0hFjn2XgDRvU6HvLzzsbNW8DZm0wacfXt7w5uv/8BnP/zpvi04grj4krgU62hpCyOlxUlLssP7QYEdsPePqvgjT10cfT7J+EiBFJJ+t+Hut7+hVSWmv6PrXOy4YC2TsqQKnjxN6aody92OxWzGmbO8XlWUqeBm17AdiwV8IFWSu12L0hlSSrztERa8CVhrMW2LsS6udWtqtjc3XL18zbY3nE0WBO8Q9Zpw9wV46Dcb2qajWa+4fXvF5y+vuVHnSKlZr1ts33M2nxKE4+3dEikF01mJ8ND3ht446t7QuiF/7nq8dVgbCyw6Z5AIlIw1gZlWpDDk/D2tCSRaUCQpUgqKNP7UZxI83lt2dc0kz/EB0jzn+g+/iT8XcvEoOnuDyZAc6uAODeXGhIsA4QdFcIBuxkjyj1Pv4zHHr0eefBjKeIKU1Os1jYPzn/0VVz//P6m3a/oyRXhP2zScz6YoKal7Q3CeLFGcLwrWTcs/v7plax3zSck0TZikmtpY1nWDJ+AD+N5A9BdxxmFcoK4b6u2G7WrL8s07bjZrHn3/Ozx68pz2q6/o6zV916J1gukM1a5ht9nw+uqGV+ueq/Xn1FXF9c0d81SxmBiSROOF4O3digvrECKWQXe9pXEei0LQE6SMnTScpW5bvAsoJdEyVr8W+iDpm67n/2fsPZosS9IzvcfFkVdFxA2ZmZWlu1oNWkLQCMAA7mg2KxpALAazmA03NK64wN/giisazbjhXyBtyOHQyAFAAN2N7qou0aVTRmaoq849yhUXfiIysrq60VFWllERYZZRx4+7f+L9nre3jlznaClIlCRNU3wIZKmM5EwBbddjnWfv5C4qSXjy8Qe88YM/pCgKhIiwpYgb9bwQpN6K5MMLivRN3CW4gUP+bsWZW3f61379ptIX6NoG8jHlwR3GO3MuT09ptjVay9hD95ZeJUidsDudsDctOdgp2Z2WfP5sFYH524b9yYijScHlekvwDjvsBNNH8b+QCh8CfduyWQ22XFdrrhYLTJaxuz8nyxWht3z+8w94/xfv8/Yf/pD5fMbZ8wuuLtc8vdhwsbU8eHrG1WqJN4bxwU48rq3HmsDGdfTWkyVDcOUcnQcLqNDihaC3hi54qrrGhugtkypNdj3kIANd72iNI08SMqUotabIMkDS9i07o5yuMkx0Gm1Bi5y8GDM9PubJxx+yubwkOzm5xYgbdvSNxUckbsDtBQ83P/trEuh/cc35DUNvL50OMTVxYWiVJgn7d+9SnZ/SG0ORFswyzXqzJp1MqDcV0zJjZ1KyNx3zxYOn3D/c4bLpeHy5Zj7OORznnEwzdicFhihCEIObkgiSru1YLxYsrxYsF+to0dUZDu8cMJ5NSUYjZJ7x+u//PiEvWG5WqFRzdbHg0cMztkGzqmp677AikOcZRZmjh7u6D57GeJabFTtlTqI0wQt6IUAGemdxBAzQ9D2b7TY+BxELJ0WqUGKQRVtPohRlqsm0ZJynFGnCpq4JQF6MSbYdSkq0lLgh0h/tHjK/t6VeL+DkDkpdT7cOR/mtNYjp2UC1CNcamQgv8Ncns/8XRBT/0vdevBRhiBIC2e4Bq20HAfL5Mfdfu8/jR6ckMk5/1A6adUUgcLy/Q54kXCw2nJ6tOJmVvPXaHfYfnxOc5f68wKJYrms8sWHhjImxjg1s65aLywWXVyuqTU21qeilZGc6JZ9M0JMpclSSFxmvffdtLh495vTpKdu6Zdu0nLWWJ5dLruoaAox2SkajSIb2aUC1Atf21NbTb2omaZx9QylQns45vIiTr5uqpu1M/D6OVEpyrch1nFnfdD2JkpRaMU4TJnnGtu+p2p4yT0EIVKJJMo0aUCeLxSVvTqbs3bnP+aOHOGNQaRLVNHIw/RqGWK/n0GMMGc/ymC2+wMtcx2RayFt14t9xkV/8MLeyhvhGlfMjuiBYP33I9PAYFvvcMwa/XdF6iZaCuu25dzInSyXVZoPtLFJB5yxHZcG3Xr9Dv14w0opPztZcrbb0HnSiaZuWtjP0xrNarLlcbVhtGpqq5qpqKedT8iInH41IygxZpGAd+WSH8V7LeFNhn5xRmY5nFyvWdY23gWmZsz8tKLIclSYootRaaoUTgsZEUFKmFDrVBBGhQp21WB9YVdVAOQbvA4mKIkmCZNtbjPHsTuNdPhtlaAWbdYvzHu81y2qDd5YkHUMfg1Nbb7l88pj9u3dR+gmma1FprN7huTFz5pqgMSzki4zr5Zrs9WcvndpfS524huD8+jduOHfxNImVoGw04uDNb/LwF/+AEoF0NGE+Tum7iO4q84TD3SmFEnRNS6EV2+0GrTQXqy1KKubak9qeL56es1isaYJjazp0msZyqgwY6dlsK6qmZrutuFot2YZIXi4nI/JRic5ShE7QRUlSlIzGE6azKffuHfGNV4/49v193jmZ89r+lNcOZuyVRfSDsw5rA8aBEAolYoFEJJIsjbFJTC483jo22y1t19Mbi3OOVAl66+h6w7Y3nNc14zyl1AofIEs0nXVse4P1EVq0XFU459g2LUIo1qsV5XjG089/Rd81EAL9tkJJxUsUT6LG/brmelOODb+Z/vc7d9lup3Qvd9q4Kctev3V333yLv/+7/4PlF5+wN83pvWOyO+VsGUeMi1zifcR0rzdbmi4ODs7LnInbIpzhYr3lYtVAmvL5+YZPnl7yw+8lCCVRWpMnCVIHVCLZbis2zjGejUmlZLw7Jc1jQETbxHy+rgkeRjt7HAtBVpSMd2bsnJ5xerZmXbU8f3pJ5yy9jxSo2hgWXYv1gUmesFfuUGYxoKs7R13XWO8IzkW7bh8dnxMpCD7Qu8CibeisZ5ZFjJofFmHZdAQCnXU0vcN5h5YlnfXkSrAzmbBaXvHGqz/k45//jN29OdYZpB6WLFyvibxJya6bXi928fUP3rr3+R1Stq8bc7pdgr2WPV+/Dt5ZRtMpr/3oj/j8n/4Ts++8SVaWzNKM5bbHi9hDzhJJ17QsNluqpqVMJfcORuTKcXT/DvnOlJ+89zl/98UFp5uWj758hrcOmaSIvifNcya7Y4yN0XKSJgRv+eePHtJ5wbf3PkZXfcSNhoDxxHgieGo8fRA8vVjzZLFmsd2yaXsa05NmGXk54rKq+HKzpup79tIMIcroDFVoeh9olhXGGJyP48hKSbqB9aoG9WrrPFXXsT8eczAuYhnXGDoTiZe9sVFVIzy9DQgZTQI66ynGE6SSPPnyc/ZOXuHRw4d894e/j3d+QIa/uKWvM6eAGMaa4iqJrzmhXyrDft1iXx/tv2nI4UXtPUTJjg8IHEIq7r56n+azd9lenLN//z6d8+RasW5rMhXwrcc4TypA2p6yzNkpNVmZ8bc//wSkYrS3x+Gi5st1wy++fMpitSHN8uGkCYxnM7rasn+4w/rJOV+eLdg2gSf/8Z/5X7db/uC1Y751OIXOo4oJq+WaalOxto7WK2olaG2P73t2ypSpLhntlDTG87QRdM6xn+YcjUvyXDPJNWWZ01Yd1kd4IMbRBY8LgkRLdkclLjhEiLNsenCPmOQpV70hT1I6a+I8vPM37VHnJKZvEaOCrut58vgJf/DWN3n0+SeoJKdrtmzWK6Z7c4KSMYO53slcn+63KqTXH1/Dm/udo/evLv417I7rgTk8QniSJOP5hz9n++E/cLI7hiSja3qC92gJSZLim5o60egso29bBIHL5Zani4akWFNZzz8+OONwOubebkmRrfng8QXvffIFf/jdb0Smq7XkRcF4NmZ+uM/z8wWJkvzZD17n9ZO3+Pf/13+Cw5Jv/1d/TNZ7QhhRffGYfl5wudrw7KMvye4f4hLF1WdnyNmEi9WSNM/51ZMlj6+uuFOU3B+NIJOMRppRniCFoncerTWaQBs8vmvpPICidwaBoO37SMKSIi6ytaSJxtg4+tT0jjLV9NajRKw5tKbHOYPHs2k6vvjwPd75wY959ugh1hg+/cVPGE0m7B0dv+io3RzuQyB3sx7D1rx5McRNsU799V/95d8IRPF1i/0vTrSKF0dIRHs4nnz4Lo//4T+SCEGe58x2ZwRrAOiaFik1pmlQOmHbdCzWNcZYjHPofITKMh6tW1a9Y9t1TFKNc4FH6y2ZgD/57pv0ncG4HpWl4OOsV7upGOUp9964w/F8l//sBz+m+vBj+lnJvW+9RnFyh6QMjH/vR+R7U0bzGfO33qSYTdFlQTGbUjWe55cL/v6DT5kLxff356RFhi40x5OC/WlJkHC17XFCXdOUcQGq3rExcU5t03ZsTKQ8EyDXikmSkmhJ00eN3arpkVJgfFTKRiWNpNSSIssJIVCvV2B6jl59gzLPcT7w9MEX7N+5R1GOIxfv10tmX1mjW7G8ABlEq/76r/7ybwgUYrCZ+G04kpdABddVodjKuXEZPH33nyhGI3Q5Zra7w+6kQDiLcR5netrekaQJm9WGdbVl7QWtceyNS+Y7I773zVd47e4e890JX15WPFtub97nRxcr/vQ79xlNxlgTgxqpE7wz9NWG0cf+1n0AACAASURBVCjn7ltvkmnBtCz41rd/iP3yEXUIWNdjpSKZ7NBeXtC2PTrPML3h2ekVv/zlp/z0vU/4xScPeFWn/Gi+j8wLbJkyKxKOdgpGRUpnYdVdz6RHLXpvHGebLeuuxzjPdtDzhxAhBfMyp9CKzsbpU4Fg3fZoHYsrUsZafZ6mqBAYZ5qj42NEkrG+OOPZk6copbj36qtonfLwk19xcO8V0jy/SZlvN8Vurt6XmLLXId6w6EJc7/QXHDi+svgvKWdud9aCQPhoeKOUoq1WNKsF06MT7uUdmQx01nNxfjWgPzN29/ewfU9rLEJrDiY5jfWsRcKyizTJqQyMZeB80/BoXeOC58mqYZIpfvzOKxgXpzvUYFZvqgql4PDOXab379E//IKR8dz9oz8h3xo2H37I4vQZVw++4NOf/5L3f/pLnjx4ys9/8kv+8Z/e5cNPHjAOnh8fHPLNnR1MVtCPCkbjhJ1MMRslaC2pDSxqE6uDMuoHVk3LR+eXNNbQe4/zHusZWHKSeREj/mVnQCiUjIMe14stgiCRgjJLkQISKdiZznjrO99DJ5qurtlsKpr1grLM2Z3PefzpR8zvvEqaJl9hQt1qt97sy9uZ+e2djrxhvr/onoVfW/yXF334scFuGwFpXnB1+pRD1TBOYmNkebGganpSDTvTETsHR8zme4gQuLxak2UpHy8a/vHBGWWSsKp7fnW64OnFmkJEpuzSRGzXp6dL/ujtO+zvTCJ0T2tkkuCbBi0Fu8cnTKa76P092o8+gLMLRt/8V+z/+E/Z3z0hb0FXBr+o8ZsOWTv28xE/uv8KPz4+pgyC572jzlNm+1PKRDBJFUoElFYsG8t6GzHgUgj63vL+6RnLvuO68KmVQsgICd7LU/aLgrO6o3eO1hiyQUFjrGNnPIojy8CkyDne38Xb2IKe7M05uHOPclRiHeRFzpMHX+C6hvFkyna1ZPfkbtQH3izy9Rtw7fb44o5/aacTZ/JeLOh10/3rmiy3F33Y7fFnI8hHKMWEBnn6AT4tES4GLm3fM5uOaUwc88mnM8qiQIqA9bAVmn/87AmrzlB1hs57nq07UiXIBLTOsTSeqo7+aH/8nfuDoEKQ5CkieLI8Y3Z4RJGPUVmGm8/YfPYpq7/7B/rT0wgTLqaMxzMOx1PuHt/hrVfv88p4RNEbnl9e8cHFJZVW7B4fkCeSUSIosiTq0YTksjJUbYsWscb+dLHig7NLtFAkSqJErJ2nUlImmr1yxLLrsQGsiZoBSUzxvGegRQt6Y0mk5P7JETIEcBapE+5941tkRUG1vGJvf5/Zzi6bizM2yyV9taCcThnN5rcm0W85aN1e6qEbhxTt16Zsv2shNtZ2w829FGRCe/aE8OCX+HIPLQJtVdEZz2w2AinRCM6fnaKrhnGRsTsp+fL5Jb0xfOtkj88v1jzfNLjgORwXfLk2aBm4M86prefCOf79L7/g+3/7Hv/1n/0QZBzqK2YTpPUUoxJdZHjvyaZTzO9/j3P/cx79/Ce4v///0MUIkeV01tIZS+0szzdbntQNp97jipT9kzlpKlC+ZzLJEUj6YOkDUczpQWjJtu/48nJBoTVq6KFDLFwpAZmUrNqORdMwK3Igjh85EceXs0xjrAUCiVY459hUFZM8o9/2VIsLnHXs3bnH+elj9g6PkSphurfL8uKMtqp49N7PGM+PKSeziGYFXgy0Das5aPeCjA0X9W/+8i/+RghR3Ji/cvvy//qFvt1Lv3mfBIRmy/a9/xfRbpnfvYusrlistuR5RGA225ppmXG1afjs0XO0lrSbDZtqy88enHG5qXHWERB0xlENTJeAYNlbCiUHHVrg/YfnvHO0y935DJQmzTOyLKec7pBmeexGBYHHE3an9OOc82bLk/WaR5sNT7dbHtdbvthseB48mzxBjwqm81m04BawUybMJiXWRrZb0wfWdQ/DnPcnzy95vKqGXn8YFj1q9nrvWPWW2vRIoLf2pooZTwPIpIpz68PnidakAiZlTqogzfIopGy2lNMZx6++weL0MbPDQ6bzA0Y7eyyfPsRbx+6d+y+1uF9aHF7gxuClnf419fWv+RBf+TMwwOn6jubL90ldx84rryA3F2x6gUwTrDH0QZHnGcY5ni4qGht49OQC+prHzxfkzjAvEure4lyUExVKUfeORjjKRFP7eK8nWrHpDP/Lf/gZd/cmnNyV6ERTFEm0H5EKPNFTpRzj2p7+ZJ82OMLRErFpkK3BNh354Kk2IapXlRLkqWSap+zNCpRWBOGwHurODWVWyelyzfl2ixCC3kXpdd+bm2FCATfuDwSBdR7rLYXUcWcrQa4FyeB8qpRGBGhMdJxItWQyGZEqzfrZKXv3XqG3ljvvfIurJw/YOTwhy0vMnVfpt2tWz58wv/dqNDbgmvIVXkTw1ysmb1XkXqqtf6XOLm79+dWKjxACKQL15RXh+RdMRil2s2JVG4oypeta6tZRTiHTkmfLirqL7HWpE6rKsahaEhc4s4Ey1WxdNMeVRAar84FL2w73pMKZCNvZVDXvffQFMtUcKkWZZ4MOTCATjQgJhVRonSJFguo9ZZGzu23Ybls2my11ayLFMghEIknThEQrUp2QFilNbxBS0XuoO4sMgarpeLxc3jRMXuppE6PxgYJMojS9iaB/NRztqVYkQ0UtVzICl5xHKc3h3i7GWookAdvTrhfsHh5x5/U3WZ6fkRcls6O7rJ49ZnZ8l7QcI0Lg6vEX7JzcG0CPL2RTt5Uz8YwPL5dhv67keh3QEa511deT0S+CPOEt+foJwdY0ZoeQTlHZhq5pWG9aZrMJSgi2bU/T9lHwb2z8+7KCJFVUVU/iIc8SLuqeTMbpT6kF1WB81/uA9tGN2ZiAQ9A1NY8ePI5mOjolK0foooz0Bp2gc4VMC5I0Z3ywz3Hb0W23tHUdJVbrTXRYEALbxzzbuSg66F0E+Vrv2DYWZy1t1/Ll1RWrpsc5fzM97Acd+vXj89fPKt6HRBMBgReB2lgmmY6l62AjhUMr5jtTXnvzTZ4/+hKtFWmaIrolaXJCkmRMRiWbxQIvBPPX3qKvVuSjkna1JB/tsDp/zt6de2BdvLwHgeTtTftSw+WrC//V3f5CHHnLqENAcIZuc8XywQOMG7G3e0y4eIw3PXXdU9U1WZlTas26jXNcIQSKLEUrRZamdCJFaksh4KIzsSYvJWmi2A5Dfj5EHdg1nD/RkeOSpglSeM7OnuOlJkkTlM6RYxXj2CARPjLes1yT5mOycky53VLkOUVR0m5r+ralFlHibJWPSp3exMyiMXS9pWpqPju/YFF3saM2aNGkFGihsd7f6NBCiAGf9S7+txfIAR/pQ2DZWHIZyBOF8h4fIE8Uk8mEpixwpgOhUVjc5or26ozi6B7j4/usry6wNpBkJb7v0PuH+K7Bdl0kGN4sUPxlbkK64ZPf2HD56nH/Yuj9evEHOf1QCnQ6Q9iG7XKNbwzTJNBsa3oHOi+QWrFtOrreUmQpiYwQPS0lSEmQEfzfWReLE0VKEFA7jxBRVixCTIV655Aitik9kOexqHH1/FnkyyM5kIosL5Eu4EIcTyYEzLamqbf0bUPX1HRth/dR/953ESzofRh2d8+y7qjbnnW15svz83g1DZU2P0iVCYEiSWicwVl/o1gVwwSvuKmBx8JLphXOe1bO0zrHJNV41/HgySlJkjIOHc4YaqXY252BzqmbmiLEYtRsfsB6dYVOMwgwOzxhc/qAJE2w1qKUvNE0XsMEb8div3XCJdwKCV7++rDxwzChkZcEqbAyYbR3xPb0ExoF1bYhK8fkZUm72eCsQyuFVNAbS5EXdE3DdJQzShTrpkO1ETtWdQYLpFJQh6iETUTc3VJENp0dcFtpkkRXBmO4PD3lg87wjrUcHBzHEWaVg4nHel2tqbc1TdNi+g4fopS6aQ11Z3Ei0FvHqmq42rZUveNqteHB2TmtiZ5p3vvBTy0+gwAUaYqwgtr3kS4xiJS9j6NN11ZGoyynSDVd12FtYN0HdAI6wHrb8vEnn3F/b8rx8SHJbB85KZndf4vls4dkozHHb3+XoB15V9BtVmit4uJ7T5JmvKBKvVirm0bbcNX/dhHFrYbNSy/GcMdLBFKlOKIeXGQFrqnwdYsrc5RKmOwfkI2ntJsqvoGdQEpP21vyzLAzHXNYd1RVRdVHSJ4zLpr1SUFrI8FZEnHYwTuUjBbW1sajM0kikksqhQsNF89PaZuWt1+r2N3ZIy1KgnG025rNZslmvWWz2eIgeq3qBGssnY//H4v1lsWmpXWB5bbmi2fPaKKMBjfUPB3x9xMwGByFFy8D4cYZUTDk7VohCRzsTMlSzXK5jLV4AsYF8jRhaxyJUDidEISgrjbs7c9JRyXze6/SbTc01ZpyPCNJMrZtTT6ZYNoGLyQ6L2PRZ1jcWEd5sZQM8eVvXfTfOAARXtwVDjDOku/sIjysP/wZWkj0ZIZqLklGO+TllEafoZSmGCt8V5NlCQ+fXfCjb9zntcMpP1msOas7EqkYp9DYCM4XTpBJiQuCMk3QIc56GCkGQ6CBp55oHAKZJCAbNps1773/Ice7c0blCG8d9aZmvalZVFs6H59AURYUowLXe5q2pdq2bBqDDZ6LquXz8zMaY2PF0drokjikd3FBIdGaRGv6uo5pn4iqVBliwSYbXgolBGVRcPfogM2moswDdB3GOkKiSGTM3+VQm7fbLXf8KyRZgVaafDJndfoQff8tgjN4E4PiYHp0VqAHnixETPiNb8vwcW1w8LtJoG+PL11v/mEKRSCwQaImeyTA0wcPmH/jHdR0F/f0OaZtCG6MSNIoNiwLni8uGacpay14frFES6i6OGCQDHzXcSapjCVz4GWMpufjkuVmg/OgpKRMJEWWopREpYpEaqx1MNMIpWjqhqcXz6EPuD5Qbzq2vWHbWzyxFJpnFUmisRY663Ae+gBP12seLpaDW4OIAL8QkCImQkrEh+pC4Gg2pdSSJ1eRDWdCLIZKGTONVMlYJhWB3nSMxyOyNObnxrnIl5WScSpJlWacZ3gbDQKFd1TnpyidMD68S2IL2u0G+hYVS0+kWUaR7KN1xovx5XDrHh6+Mnz6O0H+bzdgXtr5UcISF6sccfnP/8Dsu38AeUpfbchne5imZntxRlYUSCkxfZz2XFYbNr3n/NE540QzUoK9ROKcoOo9O0VGqiTnLkIDEbFJEX+NqLo5HGcUg3+r1AqtJCLR+N4gJiNSrelMR98ammVFFVrqvqN3McoKQbKxPdZHo50++AHcX7NqOq5LmNbGh+tlJEbBi4qldZY8Ten7iAzLtMY6F494Icm1psiiXq/3lrapsW3DyXyXy3VFaz2jLI24EmfJE0UiBXXXszefU852mBzcpV1fYtqWNC9oqyV5mmNNSyETZJAkoxH+xqskBtpfLbddOzzo3zrD9ltegtvBnAcWn3yI63qOvv/7CC3xzx8w6Z7gpafvosFOmmpOzxb4gerge0/dO5wL9M5T1S2jNKWSgqo1HE1LijRh2fYYD03bo5SkcdF3/f5uiVAQhBimO6NDWshz0BalFAUFpo/aN5ForFyzWdWsm46md5gAvQ8Y5+lctAizwcFwhFtvbyyvvPMvxKDXD0TA2WJBb+OOvc5tZCCa8GpJWeYo70idxpoIWJqOx1jvMS6gpWKcKdbrFW0XO3jOebJyTFNVOGPIJzs45yP/fdPHmr1MIpxBa5K8uDWmHIPwW2q5lyqoXwsP/E0fX0WOBMRNi9B6z973f4wsC3Si8XuHaNfSXF0SQrTMHGvJrEipqiYy4ppInKj7QJkljMclTWvIhScIyVVVczQdk+qEs82WLnikkIy04tXdgoNxHo9GEbt8UmkQgjTEAM0nsVuVZik6SaK74XCUmlDRB2hai7GO1np6F2fMrztSLrib//cwPEgEgxZw+KoQnK83Q5NF3FTelBRkSg1z7JZZkZFJwXK9pmlrppMZ621NoiTTUY4zPXcOD6i7LraMpSAd/OSaasHs8Bg1RGdKJ7iuISmnyCQlH0/i+rxYmJjhiNtr9eJF+K0WXV/9uP0mvZT3KUW2t086KunbBl1O8UlOOtsnPbqPmO6xbXuq5ZKdVDJLBFkWiczdtmG5bbjYdnS9QUoRSZLeYa3l8dWKpuuY5Gn8la1nL03YL3KyTL84dRDRtEdKhIqmAllWkJYzVJKh84xyMmE232V3Z8J8WrI7KZiWGXkWZ85SpUl09G5zg8X1tbvitbxYigj+0SLaXEohBjcmOWDD4ghyIAolA4LzdSw9G+twAR48fMh0OiXNUmzXgnMczeekecGdo0OyvGCzremco5hMqZdLbG+AGFtIldDXFcVsl2I6vTE+5Po5DMWha1To9XrdMGd+2/H+Vabcr5VofSBISMoSISTCOmzf49oteryLFoZsvIua7GKfP2b17JT+8oJMCKaZ4kqAMx5rHGmWInXC8+WG1gaS4NEi0Dh4tqwoUkUhBa2zrDtPbx2Jjke6NS6y172PrVYpBhqIjy3PvIj18z6gtCTLU0bjEieijZesFVL0bK2jNZZgYvFHDVhOH154rXFLIayERHtIkwQGwz2NoEgSXDCkSiGFYlHXXFYVkzTB+MCqavjk00/Z2ZmhtaJparLjQw4PTzh/+oSimCC44r0PfoVOU9745rfZrlbk4ynZaIw3Hd4Fyt0DxM0/L1D+AoGTw2KHFzv7uu5yQ/z8ukmW3wQQfKHNiBe6BCYn99mcPmR6cEi9rTGmx4oUZTtEUZLtHjLd26fa1lReIqylTCXTXFMqQd10GO8JUgzasTiZmipJpqDuDE1nyJUkBM+zqokme1JgrcMM0yW3JzxwIboymRaBR+m4E5EJOk1JkoRRmTPKc9JEx1q/IPq6D+RHqaJWQCBuBkuEGKzKBBSJxhiDRKGVJuBRUjBJUzrjYnNFSaz1tMZEM13n+eTLhzy7XHByfEzVNHiV8YM/+S945/s/Yr2t41Su6fnn996nrRtMs6VvW0zf02xWZDtz0jy7AUFfc2YCAceL6SMAO3zt+qWQv2Fdf23H3wQC4cUt4YdE1TvH+OCAYmef6vkzEiUJrqeTGuME4fQBqo3Ox7vzGccnc/aO9xnnCdOdCUkWXY2eLTZ459gZFSgRZ7Wdj2KEqZYEKWhtVN6Y3kbXIx192Jy1MWp20Zo64PEhUipMb9hWNV0T4fpJljAalcx2xkwnBWWekCVq+DchSTRKg1YCpQbAAGKoscWdpKRECijShERKMi3JkzjFYr0jSzSttTR9T5Ekw5ErCC5ECocPfPrwIY9Pn7PtLFfrFc70fON7P+TOq2/Qmp7JeETfNPzkJz+lXS1J8gIhJdWmopwfxcqbksg0RQxawdvLeTtHD7y419Vf/8Vf/A1Q3NwJ1wt8u/p2a/FvvhZiS1UAwrk4ZVKMyAS4wQNNOoP0HtVu4eIxcnuFCQKtM2oTqJqW1bZl4wInOyMu6w4pYNv2tDb6oXhnETIWZkLwVDbcyO2nWcqrRzvkeRK9UQfngxBidSy4SFJ2vac3jraPQRKegegosb2hbjo6Fx0VCS/yWykFinhr+AB+6DX4YZzIBheLJjpSHPuB9DzEe6RaUXc9qY7qnkQpxFDJtNeHrYvOTXW1oTk/pT6/4PTRI64WV5RZjgpw+uyUoizYmU2RaU7f9Ry+8SZpkWOrLdXjJ7iqRiUJqijiaXdrN3/l8m6v0eo3Ofg1xUAE8EIgAzdHphAxLFAhUJjonWaFJEhNMAbKMZnwTIOl1QWu2eJsj7RTzMUTzLbG9A67vKTpYxqGlOwlgnVrKBNNYwz9kMYoYDouGCWKbW+GnRZhPakUXFUt26ZnPLJoZVHGksn4RgQEzgSM6XE2xgDeOrwJBA8hSJyz2M4OOzd6sWjrCBqw8blYAUoG1AAiiEGTHCL4iBTJtB5g/RHSEJU0Hu+gHGbdtdIY79BSxcEPwPpANxR/Vm3PLz78kC8//iSWoBOF7w2uN+Ra89lHH6KaFpWO2dvf56mNd83jn/6U6r1fMRvPyHdn3PvzP2HvD3+MGpex6/Y1sGD9wvmHm565GDpoKgxAoZuLP97j5focoRQuK3Eqen4jBKJvMNkI4Xq0MzFf7iT94jHtgwf8YHzIu+Wa9y+X1MawqQ2dD1x0jnUXF3W3yDgoPOdVHydJ+p5cRueEtQV6R+9B2ZjXXy23zPdmGOtIjMFJiVIiXjsQawB9T9fZOEpkAk5es1t8VK2quKMRAakEwg1NOQ8BiZX+ZscoJEpYnPCDLDxW1dwwYyaMJcuSmOMHHyEAIsAAGgh4THAUSqOlGNDfcaz5qnGUOxnBBYwJdKFHWXDBcdZXqIdfMk/G2EfPefZ//h2ht1Smo1QC2XZcPHrAk3ff5eibb/HGv/7XzP/wx/hU4I15ab/r26lXZGFFgI6Pzw2BQPsBNio0en2JdZ5+tEsYUBnOR3aaBHS1Qlcbiq5j3jTYq3M++fJdftymVK7CTDyj6ZjqcoF1hkeLLZedJRWC1/dnjKTn4/MNTsJekVO3htOqJ0kktXEEH8UIjQusujge1LaxhNt3UUsuhBgIiwIhBV5Igop2nF5Ygo2Fl+AjoksKRZJqEuexNkbuQUY3JgFDMAfKC7wcnsuw4D7E89+HgJZgZeTNbLsOqeLf0zmPlG4YTrRDq9oxzqOhbmNdfAEDLNue3TzH+ci2KZyjdHDV9yzzjn1d0F1coa1HBo8iYLvoFLk7P2LRNTz4xbssP/iY1//sz3nt3/4V6mAP13cvFv22oiJSDgOpCLyytey2lk0m+WKcYaUg8Q65WVFMZkzaCi80iYexc5TGkxpD0VnypsOfPefx+z/js/aCt8s9yOBn/SXBjzjaG7NuGtZXGxoX69OZglzCJ5cVHbA7+KPs5QnLLooYOhknOxXX3TaBs5a66yhzHa0ze4fEoYOIiG+lUFqjQgAl0SHDO09nAsgI781DRIh03mGcwoZAXN3YD5cIpIwXtQgCqSTKu/giDYaDNoQhoGNQyUTXhWuRYus8OI8IgUSpYXfHfrzpOkIQJELQ9Q6TBFIhY/xhLIVQHGjNtrN0Y4c0DcLEU1hai3OWhXf0BI53D9grSk7PnvDz//1/Y/PkKd/+b/8b0jfu4foerlur1yQqJwVHFr71bMP49AoSzeHVGbtv3KWZJCSrU2R7yWgpsdsWV1vC1Rq/qTFI+izn0lhWm4qrxRUiOL45PyDfKfmZX2MsuLqlQfDWvWO8kGzDJV9eLEBoqrqLAN7guGoMKsAbe1N2yoyruqNetyhlbh7OvMhQQsZ2bIhuhVKmsdQpolYtDHmplAqlZKzUhYA2nqQxaJUMtCZJEGBtnCZ1xC5ZAKxh8KqO1uBKCFItwYV4KhIfpB0mc1vrX5w4ISprIDZnlIDGOXIgkQ6pFNbHSrkBXIgYVSkVwnqCVgQPmRMYFF4nUKS024pUyqHGH7v3VVfz+PQhb568ylv33+b02SOef/g+4n/4H/n2f//foe+f4Poe9W/+4i/+JogYvb/Vw+8tDdmyhekElkvCwZxytWJ6uaBoAum2J3UZYVkTGstmtWWxrHi22eIMhLpjnI/55mvv8M3dOcieZ2PBIrGMxxOerRs++uIpTdvzxsmc779+wHfu7XN/f4pSmsvGYlxgnERFap4onm8aHm5a1kMuXirJ8Sjjm3f2ODmYsjebUo4LpIzH8E3CISLUz1qHG5o1WmmESuJ1JCM/RqjoiNx3hq6P8+MhXLNXA847+kGaLQbJk0RGEEGI8udERmm20hJJFHMqKdBDacQR0DIa6nR+mKnXkjgAGbDBD0EeAyqMwWsepPcI4wiJZjQdk/iA2zQxpZWC2kRX6JGKhp+L9RVHszn3jl4lVYpuucA9XzL7/ncgT1rtRWTZfrtxvLo0sNlCURBkTPD55a/woUfMDxBFSbhyiFlGnh2Rz0omh2rgsjrISzA9dDVIT1jUhEnKuTaYTiLTAtc/o7eWv/vslM8vNtzbKSk1TMY5+8dT3j4cc7GsOF1suWwsP316RTtQlBIkk0yxn2tOdkbc25+yvzcmK9L4gK8JjTJW05yzuAFN6luDE4KARKmouQuAVBGJHZzHmdhaVUiQIZrvuFgrgGF4UwlSBF2IzZdcDydKEJRJ/Lt7B4nwWB/og8d4TzpgPm2Iz1Xe/I6eQiussfTeodNYEehCbOF648EFxkJgjeVqU5EQPV07QA/Bd+s9qXCc5GOs6Xly+pid3YaTvUPy+2+zulzR/D8/I/8v/3N0EgLfbwJHFy00bUy92gaRFfh/+hniYA85GoGzhETHQMpEv1ThhyfibEwN6i3CtoS+RyQBMsllkbOqejopKcyGlOiUtLms2es7VpXgF6stszxjnmsyJWicZ7FtWTc9iYAy03gPEy3JleTefMwrRzucnMwZ5QlZnsUdNjQ7tIpgfoWIZd7WULd95AX3jiRJECraXVrnMXVPVxuscRHIqwQyREcHKSO3NYiY0iVa4YSLw4sm0HYWLWQcphwA/y1RdKEJbJ2LwkliKpdIOZwMAyUoxCJUKqIsTPjYwGp9pFdNGBo3QiBDYLGpyNOMQoByjjRAKqBU0Zyg6RtOyinPu5rHF6csqxV3D+9y57VvYz97ij+9RH+r8Rxd9YS2AesQvSEc7RPe/QD6DvH938M/e4558oBssoNQCe7qEpXl8Qi1MZoWkngEOYsIBrqeRloeup7e9uwUggdPL+hUxqPVJbNEsZsqLtYV57VlNh7Res/zTcfTquXSBpxz5FqyryVNZ8mU5M3jHY73pxwfTNiblWRZTpLnqDwl2NiTljJyWQWQo+gzT90a+rqlNw4lDVoqPGCcp25amjYqWAQhRv1KIa2jMwYJpFKRJJosTSCNurrNsGuts1gfiy/Bx3o/ItDa+P1k4K1nQlJ7hxYwShTt4AejRewVKAHCRXvS3sbcwcf4j1pLOjymJr8yUgAAGFRJREFU92yNY+I8GZEPkEtFRkwrWtuzarYcT2YI6whKUS/P8X1Hmo2QX5yjX3m6AuMgT2GxgfkOgkD73rskb7+B7Tq+/L//A/O9OdndBq1Lms0peb1BIiEZxHh46G3c/cFC6Hmga84XS167v8enD55zsYWHqxWrquWk1JxtWp63llIpRloR7CBiaC1NCOxmCXt5yjTRFEoSpGQ+KXjlaIfppGRU5BRFTlqWiCTHC4W3Bmm76LtCzMMzm6B0NAh0w+CgaTuc9/TG0LY9po/0Zq0VuVIgofE+LqKQ6Ewxm4wokngUty0oF2hEjwsKR1y8uuvRA6xAq0HMEDxSKYyLRaKdIiMVgrWLIk8tYoosQqyLCxEZ8J6Aj78KiQtsBWjjKIDcRwRLVL2Km3hBhTgfV9Vb9ie7GG9JhKJ6/pjRbI/kyTMiHCtJEFcrSDShyBHPz0hmU9R3v8O7//P/xN54zO7JHTAWqRXJ3jHLxx8zNj3Z0WsxZvI24rUHn9XedLx//pDdVw54+vSCZ1c1j6/WfPRsQSoFF02PR+AQvHMw5fV7hyyWG1a9oV7UaCnYSRQ7Og4dvHa4wyjRpFJyMBuTjnLKUUmapgNqTCOkQoxKnDX4tsb1PUIHMg9pqhEixNhDKmSmwTqkj8URmQgylTC05wkEug6UjP6o00nO7ri4AQMXWjDNE+pW0xhHIAZ1Vdszy3RsBAXNVWNYdwbvHCoIxmnCQZlR9+5GWt57RxcCeYjxVfCBNJH4wR65cZ7GB6RVFCKmmB5JFPF4Uhk7gRJBoTUiBLZ9w26YkiYpzlm6eoW2HenpDposJWy20RoDAasVrDeou3dx5+fMEdz94z+nvjhDX56R3rlHqjPy8QFPH3/E2DQc3PlGtHaWEISCYHm0eI5LPG3f8f4Hj1gnGQ8WWy6b+FAyFcUMxzsFf/qDt5kf7fOrR5ectYbZokYHOMoT3piPmRQpeztjLq7W7JaaXAlSPfTAkwStNHKouwscKs9wWU7XNnTbDVkSyNIokw42IHTstwcZH1zqPF7H4oyQIZKqnKNrO+bjkrxMmZYFashtQypxVuO8o8k0bW94cLEClXI4yZBIztdb6s4ifLy/++EeP5mV6BCojEXLmG52zpEjyCPQGz1kGq0UdDY6X2khmPnArlSoEIM4hitD3zg7x+BQeM9ICvqmIpnto52nkJrGe0Rdoblaxsg0Twm1QdQ1mA7GI9zVgjIvCSKw+uQjDu6+SjAWgmc03ePk+G0+/eKXfLm85I2T19mbzRFag7dcmi1OOn76i8/ZesXTZst53cbbLQh0kiCl5O44I9eSzBsOSs2sLPjh/WO88/z4lTlvnuxRpgqZat7/4HO+8doxeabQIcRARkQChhiISyCRIdbu09EEnWSIzZJR0lKnCV0SbT/xMR+PpecMbTxhAA/keYrpOzAGnSQkagi6BnGGtxYRJCFY+qzns6cXnF5VvHPviGzoLC5ki5KWTCqCkDhjKbOE3VTxZNVgvGOSJjTGoZxnFGLJVwlPTkz/Ku9IQ1QCzYXkSCTkQWCCx4lwUzNQvEDCBAKp0ugQWfim60gTRe0cFsg2C3Rom7hQqzVCyGg2h0T0Hf5qSZoXsK3YTQv0aARdSwgOVAQLfPf1f8Xnpw/46Yc/xySCfDIizzUP+zWPVj2PNj0qixbZIcBMa7KhkD+SMB8XNFXDFs9EaXzfspunuOCpjUenCfO7hzz88CO+9859duZzRKpRUpGkGVpnSKURMpKlpVBEOYHAe0sqPaEo6SeO2jioG5z1CGcj9C9Eu22VSdIsJc8SRpOCrq4Za40QEu8djkAIMS6QpBF+7Cy1Enxxsebu7oTDaclm24AzIAV7RcqydTQ48kTxxm7Btu1Z9ZZpmpAp2HaOfOh9a+JghHIQZIhGvM6yHwSzIFHBY4cFdkO3LoSAEwE95P+pjCjWXGikEqy7LSIUTDSI4Ki2G7QgQN/HoTelIwmq7wFQpkPlOWFdocZjbBBweoqe78WzJdGwu8cbsx1e22x4dvaYy7ZhU7c89zWPe0ONZOotqU6YFoIsSHzfIV1gPkk52N9BJfom5/2914746OmK7abh3cs1V+uK33tyyit3j5m9cj+mQolC6wydpXE6VUbBhVBRNStEdJEAie88oetIsUwSScgz2s7gpSZNEjIp8QjSRFNkCeW0RBDYBk+hk5jjW4uxQytUDMm7B6ETrtYVXW94ZT6hqVtcb6g7g8AjkbhgSZXg7rQE56n6mCFkSrDtIzVehqhe00KQBoESsTOmpMSE+MJ1wZP6mCUFf+3qGHv0hPh9MZR+XYhGPmtjqYj07MsAs9GEXCVEjnTTEKSMzkDGIEwH01lMR7ZbdN9GEtPyCtE1hCqFoowBoHCQaORsyp3iLe5ICfWKn378t1S9pdYpewHujAqMklS94XLZsyfh7v6Uvf0JeaLJZVSp3Nkb05nAR11H8J5PH5/z6OkZ/+7118mmM8JAZxIqwQ/THFLoAdnhECoiOgkx1QlC4QLYLs6ZSevQ1uGVQKdJfGlUZK9niSbJUoK1yOkU1xtMH6FC2sZOmneO4CVeBpRUNF2PCJ5gPbWLuX71/1d1JruWXFkZ/tbuIuI0997sbKfTrsYqqgBRlAQCMUe8ABMGPAgSD8MbMGDEACSoAWKAwFSJEkVZZQNOl5vsbnOaiNjNYrD2TWCQEyuVkk9E7L3W364rqsKs5lx5d/SclsIBG0qTF85rZW1qIk6FnvhqV5MI2bv+4tikci/ZKZ0nD135K6KGAKoRRFUtfv11rxlRJzwOEXWOV8cb3vGRwLzAuiLOo9kCbxhGuLxgPRxo60paFzQXwn7P8fY127OBG+IdWns1V6lobUitVoanHlkq02AtiFNTwmZAg0OXiafB8fjJA6Zx4nI79rdWianyHRXubu745HhCvOd2nvmLv/p7/vR84tl3nhFCIKbRJnac9ZaJmPXJeZMCqmnUy7pQljN5ziZh7m5SEdDaIChDCEzjwLTZIKo0cUQfyf4EatZlyzlQyPajl9pY80opSvCeewXanC0VOjczMkYRanHcLpkpBJauv8sKo3O4apO/R0gibAGccARCL090mKc8OsGpEDtEO6CMfZhbgKqOJIboZbXI0o14LmLky2Iiz/N8JOjhzpoLcVZCO4zI5SXls89Ybt4ASjuf0WFgXWaO5xObiytca+jx0PtLLVZM2n09FWwl8O2Y+CRn2jiRqnAZA3fbkQvneX8pbDcj05TYbCdCz6FbzzN5qfzgu+8RnPLPn3zBi9z45uUdf/l3H/MnfxTY7jakFEnjiIsRv0ZisCBB8Q7wxnKVRl7njqlXylLe7u7Sf9wUE9vNxDRtSDGhrVFFqDnbi9Np5fs6EUVY5oVci4k5UmI3TRznQm2GM5SmlFyNxBLPUhaCCMdcuijRRBtJ7N9PapKwLY5RhKNYuLBXxQNJbW9PCJXG0NVNAWV0kSSepa+M96ohxJNUuRTPqSnXZeWhDxxaJcj5jJ7P9rCDQ4YLTr/8BV/85F8IwwjLSsor28sLbl685LicuTwdGYFaMmG7R2pFQ4DjEQkRBmtAfFQtfuTF4MnnyhOFcRrwV3suTjNDUzYXe0KKDONooEQ0Vaw/BJ6Vyrxk6n9+xSdvCv/29Q0/+vQ5H33rKWNMpGGxh78ZKMG2ARdjd23aIFdzZi2Qq5Eg4sAHa2dMMbIZY9/1TSzZSqbmBe1KG+PbmyGPpZFrptJFETkTPGyngeNpAVXm0sjaOJeK88EkiZZrArQOw5qQQUvFN2UST1CYAHFwFttMVIQRIaIMIiSg4Bj61C5qwU1OTdXTaNCDDwpKQllb5VAra1koznOxuSDQCu10oB3uiJtvwevXfP5vP2HWSiiZspy5WBaG2yN3dzcsTZnP57cTcmiKpvi//CxALjyLEx/X1/wo7Pnx2jgHEzs9CJ4V5RAduyYEsfD+EHtVpkLSxrguXO63vP/eI9ZcKbzkk+uZn372Nbtx5MHljqlN5LXYPRlNjeqDoYRgbFUrjZqNG3DexJU+mDEijumtjNqLQLO0CdEuwkiJWm22uGe9ggs0V8nzSl4ry5LZRM/ZO2ppptgpdiKc1mw6ehG0NZIPtglUBewqHMUeYlTD36+xnjkvpmLddAnz0EUtQZQoDq9250tXN9UeKh69hTHMWgniGZ3jrlU+TBOhVkpdCVo6uNsanI588ekvuTmfeXZ5xTfnE+faOOQFvxw5FqM951LQBVKINKm4GtC2glZba3LjB8MlP+ULVtf4zWHgPzQzXiQCFanKeV553hqPvnnD7vtXJggQbO1qlbSZ2JbGxX7Ph+835tr48vArzkvh9u7cTX8enQZbIQmoQC4N1tkED64X8Gi1MuXmTAARAj74DuoM0MUYUvs+HkOvLPaoc7g0EJ1DQqFkiyiZVyNbSi4kZxPz0ngbHYprtCZE5yw21Ht819KqWmtz6l+t8f3whsItwtZ5blTZCGyLoXZOQZ1Ruq7j9ZbOYTx/7sINVFlR1ta4GAwiPyxnHoSBy3EimsJJ7RiqlS8/+yXPX37Frz0xgcNcKwuNOReWWsmYUPB6PXFcFiuXEbEkCTVXNgqsKw+GLd+fLthI4Luz49Ex8/OvX7FWZePgwTjBOfP8y1eU84yLA4jHx0AYJtI0st1OXD7Y8fjJFdsx8WCIfHC1xcVgD7ypDWPaoFW0Ktq78OgceetJGS5GfIqEIRHHRBqtq0ViV7EIVNf7jqp9sS4lwjDYSlUy+XRmWRbyUuyEWRbLX/eeITjmWnDOvXW/+K6edQKD+//2ZlGzYp9pvNHKa20cVHkgnq2ABMcTHLXDq16EiDBwb1aw08dcw42ijdyDCavadbALgc+zlQTPNVPyymQnlkdiJGvl9fnIw2FD8p7cCseaOWXLiFly5vZ8pAHnYm9Vab3YtpROcJiMKWtjkyLfu7ICuY/Cnh/JJadz4+XphGtKjIHLlLi5OXP76tpQLu+pxQrox3HDZr/har/F91K+P/joXR5v7R6epkicEmGIhOZAlVoyaMF7m5pTSgzDQAqBNETSNDAMiSgBL/alDwgRj++HnYoYuucdtO4B10JZM0sfCNdcKM3gUUEJXtgNgYc9BmU3BLYpUJvt34O3FEnpR/TghA0Or3b3iio7FZ5KZKdwI8rgBFkrGWEUTxCMVcO2HM//1nW4zrbde+2WVnkaB77JluahqjxNI09C5Ou8EMAGBmnKsqw45/j6fMuxFF7NJx6GyBACb+Yz3nuWWqgCpQ5WeRkhlC5PSqFnrQhehY8ePeXmxcJnyzXvh5Ef6sCvcqVNI7EUNAXO88L89TX1w/dotXK6veH6q19wPs2owuH2jpvrO55dTly/yTSf2I4j22lijIEYHd4FnArNg0fxrd91oR+HIhACPpn3zfto7QvBm2Di/4AcaKMuqyVNrQvLsrDMK8u8spbyNqp7zdlkk94GvSFGdmNjOxmaGI6Zb04LWWFyniF4mjZKbWyHiKMQsx3/A7AXRxXl2gvNCXFtLGqhghsnTJ16bfyfqs0+vHnxvSfOHvDem0fgrlZD+cTx3jDw1XziUCuhrTasrWvmYpyYy8ppMU36RRrY+MBSCy+ORzYpUXImxWhBAM5Cdpo2pDZkGgwdE+s+DcHx29t3+fj4JV+stzxLkee3R64fzDx0Fg/mh8Ttv/4n7330PnJ5QSuN5hNNF+rpzHx9x4PdDnWBOO25eHTF7mrPtBkYvOuDErgGTAPaGtL6Lq4K0iBZp2lbFyNmvNnytTVrYei7sqKUWinrTCmV+bwwLzPzaWZZMyU3Wi7mIxDBe3OzpOTgXhjVUyMH7/ni9sh5LWw3gaU1osAUPUNRhjGxFsMABnVkgTuvZFGeFIfHc/D2dW9ESM7+W72nsRE8lntTUc5NuRK7QnbO8aZYs9RX68IPdxfcrjO3tfFsu8f/+eMP/qzVMh3XmSZwuy4c1pXdkLgaNswlE8ThgpEUqpUhRLYxITQGF4gh2t3Yk5akgaSIlMrgEvvthtM8czOfeBE9N3dHdsGQs5N3hP96xYOlMv7Gh2x3Wy43Gwbpu24IvPPRd9g9fsjFxZb91Y7tfsu0meyoDoEYHC5Fq6/y0bzq0f5I6D1qRbs/zg7E+7u+9f221mq58eczZW3kkpmXhbIWltmKgHO2oz1Xk2JLR9Fi9Ig4piESRYi+H+kifH5z4vFufBtBtveeenPGB8c4DZzXwkpjEaAqV025UMeqBrpsxbH1wk48gzhzxqgSBUPcVAkI39TCDuGdEK1pWoRD7437IA68WBYexsTLxw/n0FJkPR1t7O8/xH/NRwiOJ2nk0TgxV1hapjVjr7QfL8n3cjq5v2s6NhMCrRUTICbHflV+ffuEMSae+wOf3x043zqm/cTpXLkcI/nnX1K+9xz5rW8ZyDJO+Gnmo29/i7SZWI4H6hBs+HLRIr/v7cOtoN693RjVWRVWK9kQrab96wj2UqqBF00rIt5CAIqpfspaycWg19YatVpDg3ZzhOsrUbCVGO8dtVbiNtrVUDy1RdZ15YOrDa9OZtqYYuDF6czjZgPZerMwXAmPLkbW04pfGzvnzQYmwj6Y3GtEua/d8GKQbenKz9pM967Y1x7FELmlH/tf5IUfbvdcrzMPYuS0n/jnNBOaNo55JTjPUs4ULWhr3K4L700bmkJmZQqeN6s9+KT961CL5aitvr0buR+Eig2ItExIAxdb5XvbgX86zLjcqG8O1Bg4LAXmTC6e9g+/QN9/RHh8yX7aoj5wsduTy0Iahw7viq1c0cLk700aEjzazMmhCCVnijeaV1EkeYOIfei1pNb1rl0d06p2YWQ1x22plFzeZs6IGNnhxZFcx8AFWnN4J8QQrMc92p49OwN/fm8Y+PmvXjFXZRs8Xx8XLpxjI3C4mXmQIpdDwAczi7jSeOQDswobFYaOCk5ikqsowtJaDxwwjqGhXV5tZQGzKv+9zFyEyF4c+2GAceBvh8ptaYTlcKBUMws657hbM5fRrDXX84pvpswwbNvWjNr07QRpbcpA8EjOaDDGDGdbKWImfxkgNYjiCN6x8cKblzeccGxqRMVRXh7Y/s3P4I9/n7Dbsm9Cnc9EF4hTpGkP7XWu69jvY1BsbRSiXQlajbnLGeesLanhOu7+toncvt5qJl4tVqxna969bVuQJmitmNXZQnulNJx3Zv112HVCw4l9d60pQ7Saj3GofHtZ+PTFHdrgphZkHIjeMy5Go5a7jBsDLQYeV7jC8bqp3eUiLF3XHsXdk8bc59J5LNa7dChXgS/zyk1t/O4wMIpjlwb+OmReaGUi4Vp/k5eS2Q+JfRp4utkxhsCnhzemF8J6xoLAXDNNG8H1bNPBsUqXQKva+pazMXZNkTUb0uaMZvzmfOTbFzu2RZjPC+64sqkgztG8Y/nl1ww//nfIC8N2wCVPWWd0WXAUglfQakc09gL4FAnR0LgQAi56fDATg3OWEXtveBAfehNCn9Zboy757QOv/Stq9Kvq/qF646mDUyseGCIxOMbRM6RASp4YxaJIk2foVG2Kng+fXPD9Rzs+EM+HIdFK4+SUdQpcD/AyVF7SeF0yUx/aUjSvW3SO+94GwbB4FSjIW0NFRSk0JhGO1Y71JzGxF8dVTPwkVP5DF1yjmyebxqaVuRauhoF3pg2tNb5cTrxYV561SmhKEph84FYX5lzoHhDm04mYIjJuDBVJHfPxndP23nRz68IXeuTNuvC9o9LwHFvjsgbemQbelIxrMLhE/vhzBiD/0W8xbCY0RFothpCJg+RxzSIzbXCzibZlRVyD0rvFXTdjKkgz8aE1NAT7mdSm36ZQ1ZC7Wgut9qBClPs0JSdCcz2OxAtOGqm5t/6/qh7fXTJOPNUVcDD5xBA8j/VMzkqOnrFUjqcVxU7X6DwJ5bsamURwyZkFqklX1jqamCEyiM0UuStxo1gqVlElOc+LkikCT33gYQi8SI5/lHNX1YAiMTgfXuR5yadWeMjEB4/f5WdfPee4Zi5D5NX5xLtpRFvjkC2dOYmhXRodtVVKntmECR+STRwlm/HBB1thWqVuPD+9ueF3/IZHp8bLsfHqtPDDac+DYaR5x3kt+GhHpH783CjDP/xNNEV8dm+HRBVnHjMPSGeVnEDw3U9c+0tp/5uIoD7QNNtRX1d0rdSs/ejv1uJc0GJm9JqrmTihJ0oLmtWEGhhEK6KoM542YH+5qTlfvRPUNSqV4ZApvzqyq3AlwqcC78SE78Pg2JTHOLadN3fRk1Yr9DMT6b3dXAjYXLHQzFWMtUqKmK7+q5p54CNPQ8RNI3/jzhyl4PF2xcH1/wCGmH2qncw2cQAAAABJRU5ErkJggg==" />
+                        </defs>
+                        <rect id="Layer_40" width="144.578308" height="150.361450" fill="url(#pattern_190_15910)"
+                            fill-opacity="1.000000" />
+                    </svg>
+                </div>
+                <div class="subscribe_info_text">
+                    <h2 class="Vestibulum ">&laquo;“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                        a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”&raquo;</h2>
+                    <h2 class="bin_burh">Bin Burhan</h2>
+                    <p class="dhaka">Dhaka, Bd</p>
+                </div>
+            </div>
+        </aside>
+        <div class="whiteline"></div>
+        <form>
+            <div class="subscribe">
+                <h2 class="subcribe_text_top">SUBSCRIBE</h2>
+                <p class="subcribe_text_bottom">FOR OUR NEWLETTER AND PROMOTION</p>
+                <div class="div_for_input">
+                    <div class="div_for_input_left"><input class="input" type="email" placeholder="Enter Your Email"
+                            name="Email">
+                    </div>
+                    <a class="button_input_right" href="">Subscribe</a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <nav>
+        <div class="top-footer">
+            <div class="top-footer-1">
+                <a href="../homework1/index.html">
+                    <div class="top-footer-1-logo"> <img src="./img/lef-logo.svg" alt="Левое лого">
+                        <h2 class="BRAN">BRAN<span class="D">D</span> </h2>
+                    </div>
+                </a>
+                <p class="top-footer-1-text">Objectively transition extensive data rather than cross functional
+                    solutions.
+                    Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly
+                    syndicate
+                    an expanded array of processes and cross-unit partnerships. <br> <br>
+
+                    Efficiently plagiarize 24/365 action items and focused infomediaries.
+                    Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
+            </div>
+            <div class="top-footer-2">
+                <h2 class="top-footer-h2">COMPANY</h2>
+                <a href="./index.html" class="top-footer-a">Home</a>
+                <a href="" class="top-footer-a">Shop</a>
+                <a href="" class="top-footer-a">About</a>
+                <a href="" class="top-footer-a">How It Works</a>
+                <a href="" class="top-footer-a">Contact</a>
+            </div>
+            <div class="top-footer-3">
+                <h2 class="top-footer-h2">INFORMATION</h2>
+                <a href="./index.html" class="top-footer-a">Tearms & Condition </a>
+                <a href="" class="top-footer-a">Privacy Policy</a>
+                <a href="" class="top-footer-a"> How to Buy</a>
+                <a href="" class="top-footer-a">How to Sell</a>
+                <a href="" class="top-footer-a">Promotion</a>
+            </div>
+            <div class="top-footer-4">
+                <h2 class="top-footer-h2">SHOP CATEGORY</h2>
+                <a href="./index.html" class="top-footer-a">Men </a>
+                <a href="" class="top-footer-a"> Women</a>
+                <a href="" class="top-footer-a"> Child</a>
+                <a href="" class="top-footer-a">Apparel</a>
+                <a href="" class="top-footer-a">Brows All</a>
+            </div>
+        </div>
+    </nav>
+    <footer>
+        <div class="footer">
+            <p class="footer_left">&copy;&nbsp;2022 Brand All Rights Reserved.</p>
+            <div class="div_icons">
+                <a class="footer_icons" href="https://www.facebook.com/?locale=ru_RU">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9"
+                        height="16" viewBox="13 10 9 16">
+                        <image width="9" height="16"
+                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAQCAYAAADESFVDAAAAAXNSR0IArs4c6QAAAKVJREFUKFPNkMENAiEQRT9DBbawlqAl7JFAF1qClqAlaAl6IYSjJWgJbgt0wJhJwOCaGI5OQgLMI+8PCrPy3o9a6x0zD6V1Vi0jABFdACya+08ohHAHsCpAAiDrC3oCEE0iorUxZpIHb12Mccg5CyQ1WWuXValKcyw5DhUCcJQ9ET1UCGED4DSfsjnve6Btj+7WF7y6f073z5BkKx8LZk7OuWvN+wJyeW1wC0uhewAAAABJRU5ErkJggg=="
+                            data-name="d" transform="translate(13 10)" />
+                    </svg>
+
+                </a>
+                <a class="footer_icons" href="https://twitter.com/?lang=ru">
+                    <svg width="15.892334" height="12.994904" viewBox="0 0 15.8923 12.9949" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <desc>
+                            Created with Pixso.
+                        </desc>
+                        <defs />
+                        <path id="Vector"
+                            d="M14.2588 3.23856C14.2688 3.38068 14.2688 3.52286 14.2688 3.66498C14.2688 7.99997 10.9916 12.9949 5.00171 12.9949C3.15625 12.9949 1.44202 12.4568 0 11.5229C0.262207 11.5533 0.514282 11.5634 0.786499 11.5634C2.3092 11.5634 3.71094 11.0457 4.8302 10.1624C3.39832 10.132 2.19824 9.18781 1.78479 7.88831C1.98657 7.91876 2.18823 7.93906 2.40002 7.93906C2.69238 7.93906 2.98486 7.89844 3.25708 7.82739C1.76465 7.52283 0.645386 6.20303 0.645386 4.60913L0.645386 4.56854C1.07898 4.81219 1.58313 4.96448 2.11755 4.98474C1.24023 4.3959 0.665527 3.39084 0.665527 2.25378C0.665527 1.64465 0.826782 1.08627 1.10925 0.598969C2.71252 2.58881 5.12268 3.88828 7.82507 4.03043C7.77478 3.78677 7.74451 3.53299 7.74451 3.27917C7.74451 1.47208 9.19653 0 11.0016 0C11.9395 0 12.7865 0.395935 13.3815 1.03552C14.1176 0.893402 14.8234 0.619293 15.4486 0.243652C15.2065 1.0051 14.6923 1.64468 14.0167 2.05075C14.6721 1.97971 15.3075 1.79694 15.8923 1.54315C15.4487 2.19287 14.894 2.77155 14.2588 3.23856Z"
+                            fill="#B2B2B2" fill-opacity="1.000000" fill-rule="nonzero" />
+                    </svg>
+                </a>
+                <a class="footer_icons" href="https://ru.linkedin.com/">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14"
+                        height="14" viewBox="11 11 14 14">
+                        <image width="14" height="14"
+                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAAXNSR0IArs4c6QAAANZJREFUOE/lksENwjAMRe1kAlaAFRihHOP2AiPACozACmUFTk17oyswAh0BJqg/chSQOKD2TqQoTvSffr4T7rpuqap7ALeyLC80c3CM8U5ES9Or6qaqqn4Oa+CDiBZZfBCR81xwT0Q2exE5zoFMw03TbJk5OZpbzlzYHsDTe9+r6jZHGd5RvjI651aqalCdnYe8ph4kJ+ZLCGE3Bf66+XEKfAI4eO9vAGoAKQIz91PgICIrE8cYrYGfCH8Btm17BZDeyTm3HsexYOZT7t4QQthYnT/K5/wF36uqA0UL6tYAAAAASUVORK5CYII="
+                            data-name="1" transform="translate(11 11)" />
+                    </svg>
+
+                </a>
+                <a class="footer_icons" href="https://ru.pinterest.com/">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12"
+                        height="15" viewBox="12 10 12 15">
+                        <image width="12" height="15"
+                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAPCAYAAADQ4S5JAAAAAXNSR0IArs4c6QAAAUFJREFUKFOFUsFtAkEMHLuDtAAlJCXAb2/hE0pISgglcCVwJXAv9viREnIlhBJCB3Y0q110SESxtJJP9njG4xNM4ng8vorIAgAfRGQ0s361WvW1TZicTqeZmR0APAO4lsfSrAD7pmk2OS/NZwBPADpVbUMIBHHQs7vv3H0hIhkkKaU9gDcA2xhjm1L6IEOMsZuwf3GgmS0J+GFBVedmRuCufocQLsxTSt9F3pYAB3CJMc4nhTzgAaCrDJQwH4bhTL0AxhjjS3XmjqE2ufumWEpZbYxxWxc3M+6AvEO11N1bEaF+WpkNYNMwDAd3530+m6ZZ5jtM3OByDNrai8isSLyq6jKEMN4AKSVK2XMSEaWR6aiq72zOh5ssVu+R9VMqa9Wpu1+jaM0OcbH1ep1ZHsWUgfpp783O/wB7Ve2q1r8YfgEvUcSBJn9CEAAAAABJRU5ErkJggg=="
+                            data-name="2" transform="translate(12 10)" />
+                    </svg>
+                </a>
+                <a class="footer_icons"
+                    href="https://www.google.com/webhp?hl=ru&sa=X&sqi=2&pjf=1&ved=0ahUKEwiIrYi1gNCEAxVPJBAIHWRSCTIQPAgJ">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21"
+                        height="14" viewBox="10 11 21 14">
+                        <image width="21" height="14"
+                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAOCAYAAADABlfOAAAAAXNSR0IArs4c6QAAAXNJREFUOE+Vk9FxwjAMhiVtwAphBDoCvCWGFxihHaEdoYzQrpAXTvgNRmhGaEYoEyD3ftfmkjT0Ut3lwbH1Wb9+mWkQ3vvZ9XpdMvMMWyJSl2V5GZ77a81503tfmNkzEW2JKAJTAFiLyL4sy3YKPEIT8ERExb0kZj5XVbWaBIVcM/voABtURkRRMjNvQwiFiKwmV6qqkPyaAHVVVbuRPhf3gN77hZk9ElHrnNtHjqp+piovIjL/rymqCuBbgs4zNIxVmRQgoRfM3KK3nbZhH16gXfjeUWmEYuGce8oEVcXtv6C5omQuVA4jQr/SCDXOuYcOFMBFJyOPGnoXZSbpqBK+YNz2ItLw8Xg8hRCWOBRC2K3Xazjfi2QGJgTT0DNztKeHw2EpIphRRBtCeOmChzNsZqvNZnPu3ooz6Gc2OQ6/qmKkICEHpCAR8pEQX9iwypF+xl+3Z5rcBrj7RG95U4E9KBapdzAE38+tzI2Z1WO9vlfpNzFtv5o0GsTEAAAAAElFTkSuQmCC"
+                            data-name="3" transform="translate(10 11)" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>
