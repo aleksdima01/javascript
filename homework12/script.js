@@ -43,20 +43,26 @@ data.forEach(element => {
 
 const items = document.querySelectorAll(".item");
 const cartMenuMegaBox = document.querySelector(".cart-menu__mega-box");
-const addToCart = document.querySelectorAll(".add_index")
+const addToCart = document.querySelectorAll(".add_index");
+const tmpText = cartMenuMegaBox.querySelector(".temporary_text");
+const arr = [];
 addToCart.forEach((e, index) => {
     e.addEventListener('click', () => {
         const item = e.parentElement.parentElement;
+        tmpText.remove();
+        if (arr.length === 0) {
+            cartMenuMegaBox.innerHTML = ``
+        }
         item.classList.add("add_to_cart");
         if (item.classList.contains('add_to_cart')) {
-            cartMenuMegaBox.insertAdjacentHTML("beforeend", `
+            cartMenuMegaBox.insertAdjacentHTML("afterbegin", `
                     <div class="cart-menu__menu-item">
                     <a href="../homework2/single-page.html" class="cart-menu__menu-item__img">
                     <img src="${data[index].image}" class="cart_img" alt="cart-menu-man">
                     </a>
                     <a href="../homework2/single-page.html" class="cart-menu__menu-item__text-a">
                         <div class="cart-menu__menu-item__text">
-                            <h3 class="cart-menu__menu-item__h3">Rebox Zane</h3>
+                            <h3 class="cart-menu__menu-item__h3">${data[index].name}</h3>
                             <p>
                                 <i class="fa fa-star" style="color: #e4af48;font-size: 12px;line-height: 1.2;
                         font-weight: 400;text-transform: uppercase;"></i>
@@ -69,43 +75,34 @@ addToCart.forEach((e, index) => {
                                 <i class="fa fa-star" style="color: #e4af48;font-size: 12px;line-height: 1.2;
                         font-weight: 400;text-transform: uppercase;"></i>
                             </p>
-                            <p class="cart-menu__menu-item__p">1 <span>x</span> $250</p>
+                            <p class="cart-menu__menu-item__p">1<span>x</span> $${data[index].price}</p>
                         </div>
                     </a>
-                    <a href="#" class="fa-times-circle-cart"> <i class="fa fa-times-circle"
-                            style="color:#c0c0c0;font-size: 16px;font-weight: 400;line-height: 1.2;margin-left: 55px;"></i></a>
+                    <a href="#" class="fa-times-circle-cart"><i class="fa fa-times-circle"
+                            style="color:#c0c0c0;font-size: 16px;font-weight: 400;line-height: 1.2;padding-left: 50px;"></i></a>
                     </div>
-                    <div class="cart-menu__menu-item__border"></div>
-                    `)
+                     `)
             item.classList.replace('add_to_cart', 'added_to_cart');
-            console.log(addToCart);
+            arr.push('+');
         }
-        const cartDelButtons = document.querySelectorAll(".fa-times-circle-cart");
-        const cartMenuItem = document.querySelector(".cart-menu__menu-item");
-        const cartMenuItemBorder = document.querySelector(".cart-menu__menu-item__border");
-        // console.log(cartDelButtons);
-        cartDelButtons.forEach(delEl => {
-            delEl.addEventListener('click', (target) => {
-                //console.log(cartDelButtons);
-                console.log(target);
-                item.classList.add('delete_progress');
-                if (item.classList.contains('delete_progress')) {
-                    // console.log(cartMenuMegaBox.children);
-                    //  cartMenuItem.remove();
-                    // cartMenuItemBorder.remove();
-                    //  console.log(cartDelButtons);
-                    item.classList.remove('delete_progress');
-                    item.classList.remove('added_to_cart');
-                }
-
-
-            })
+        const cartDelButtons = document.querySelector(".fa-times-circle-cart");
+        cartDelButtons.addEventListener('click', (e) => {
+            const cartMenuItem = document.querySelectorAll(".cart-menu__menu-item");
+            e.target.parentElement.classList.add('delete_progress');
+            if (e.target.parentElement.classList.contains('delete_progress')) {
+                cartMenuItem.forEach(cartItem => {
+                    const nededItem = cartItem.lastElementChild;
+                    if (nededItem.classList.contains('delete_progress')) {
+                        cartItem.remove();
+                        arr.pop();
+                        item.classList.remove('added_to_cart');
+                        if (arr.length === 0) {
+                            cartMenuMegaBox.innerHTML = `
+                            <p class="temporary_text" style="color: #6f6e6e;font-family: Lato;font-size: 17px;line-height: 15px; font-weight:400;">Put something here</p>`
+                        }
+                    }
+                })
+            }
         })
     })
 })
-
-
-
-// <img src="${el.querySelector(".item-img").src}" class="cart_img" alt="cart-menu-man">
-
-

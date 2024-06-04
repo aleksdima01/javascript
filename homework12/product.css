@@ -227,7 +227,6 @@ input[type=checkbox]:checked ~ .top-menu__box {
 }
 .right-header-block .cart-menu__mega-box {
   width: 262px;
-  height: 415px;
   padding: 17px;
   background-color: #ffffff;
   border-radius: 5px;
@@ -239,6 +238,8 @@ input[type=checkbox]:checked ~ .top-menu__box {
   left: 0;
   right: auto;
   align-items: center;
+  gap: 38px;
+  padding-bottom: 33px;
 }
 .right-header-block .cart-menu__mega-box__h2 {
   font-family: Lato;
@@ -291,6 +292,8 @@ input[type=checkbox]:checked ~ .top-menu__box {
   display: flex;
   align-items: center;
   gap: 15px;
+  position: relative;
+  box-sizing: border-box;
 }
 .right-header-block .cart-menu__menu-item__img {
   border: 1px solid #ffffff;
@@ -306,6 +309,7 @@ input[type=checkbox]:checked ~ .top-menu__box {
   flex-direction: column;
   flex-wrap: nowrap;
   gap: 10px;
+  width: 90px;
 }
 .right-header-block .cart-menu__menu-item__h3 {
   font-family: Lato;
@@ -338,6 +342,14 @@ input[type=checkbox]:checked ~ .top-menu__box {
 }
 .right-header-block .cart-menu__menu-item .fa-times-circle:hover {
   color: #ef5b70 !important;
+}
+.right-header-block .cart-menu__menu-item::after {
+  width: 100%;
+  content: "";
+  border-bottom: 1px solid rgba(237, 237, 237, 0.74);
+  position: absolute;
+  bottom: -20px;
+  left: 0;
 }
 .right-header-block .cart-menu .cart_img {
   width: 72px;

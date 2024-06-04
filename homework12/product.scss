@@ -264,7 +264,6 @@ input[type="checkbox"]:checked~.top-menu__box {
 
         &__mega-box {
             width: 262px;
-            height: 415px;
             padding: 17px;
             background-color: #ffffff;
             border-radius: 5px;
@@ -276,6 +275,8 @@ input[type="checkbox"]:checked~.top-menu__box {
             left: 0;
             right: auto;
             align-items: center;
+            gap: 38px;
+            padding-bottom: 33px;
 
             &__h2 {
                 font-family: Lato;
@@ -335,6 +336,8 @@ input[type="checkbox"]:checked~.top-menu__box {
             display: flex;
             align-items: center;
             gap: 15px;
+            position: relative;
+            box-sizing: border-box;
 
             &__img {
                 border: 1px solid #ffffff;
@@ -355,6 +358,7 @@ input[type="checkbox"]:checked~.top-menu__box {
                 flex-direction: column;
                 flex-wrap: nowrap;
                 gap: 10px;
+                width: 90px;
             }
 
             &__h3 {
@@ -394,6 +398,16 @@ input[type="checkbox"]:checked~.top-menu__box {
             .fa-times-circle:hover {
                 color: #ef5b70 !important;
             }
+        }
+
+        &__menu-item::after {
+            width: 100%;
+            content: "";
+            border-bottom: 1px solid rgba(237, 237, 237, 0.74);
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+
         }
 
 
