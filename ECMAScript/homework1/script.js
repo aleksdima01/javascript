@@ -28,15 +28,15 @@ console.log(calc.decrement());
 // console.log(targetElement);
 
 function findElementByClass(element, className) {
-    if (element.children == null) {
-        console.log("нет элементов");
+    if (element.classList.contains(className)) return element;
+    for (let i = 0; i < element.children.length; i++) {
+        const childElement = element.children[i];
+        const foundElemnt = findElementByClass(childElement, className);
+        if (foundElemnt) return foundElemnt;
     }
-    return element.getElementsByClassName(className);
-
+    return null;
 }
 const rootElement = document.getElementById('body');
-console.log(rootElement);
-const box = document.querySelector(".box")
 const targetElement = findElementByClass(rootElement, "box");
 console.log(targetElement);
-// console.log(rootElement.children);
+
