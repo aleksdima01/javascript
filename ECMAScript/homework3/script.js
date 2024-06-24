@@ -100,4 +100,4 @@ order.addProduct(product1);
 const product2 = new Product("Headphones", 100);
 order.addProduct(product2);
 
-console.log(order.getTotalPrice()); // Вывод: 600
+console.log(order.getTotalPrice());
