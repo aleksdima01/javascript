@@ -1,12 +1,25 @@
 {
-  "name": "pass_gen",
-  "version": "1.0.0",
+  "name": "passgen-ad",
+  "version": "1.0.4",
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "password",
+    "generator",
+    "random",
+    "string",
+    "nodejs",
+    "node",
+    "js",
+    "javascript"
+  ],
   "author": "aleksdima001@gmail.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aleksdima01/javascript/tree/46b026e8db933c8b490377b5f367d5ad3d30bb0d/NodeJS/homework2"
+  },
   "license": "ISC",
   "description": "Package for password generation"
 }

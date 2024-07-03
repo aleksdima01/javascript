@@ -46,5 +46,4 @@ function genNumeric(number = 8) {
     return result;
 }
 
-console.log(genRandomWithoutSpecialCharacter());
 module.exports = { genLetters, genLowerLetters, genNumeric, genRandom, genUpperLetters, genRandomWithoutSpecialCharacter }
