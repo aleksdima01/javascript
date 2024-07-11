@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "firstname": "Petr",
+        "secondname": "Vasiliev",
+        "age": 34,
+        "city": "Volgograd"
+    },
+    {
+        "id": 11,
+        "firstname": "Petr",
+        "secondname": "Vasiliev",
+        "age": 34,
+        "city": "Volgograd"
+    },
+    {
+        "id": 3,
+        "firstname": "Vasya",
+        "secondname": "Fedorov",
+        "age": 39,
+        "city": "Volgograd"
+    },
+    {
+        "id": 4,
+        "firstname": "Petr",
+        "secondname": "Vasiliev",
+        "age": 34,
+        "city": "Volgograd"
+    },
+    {
+        "id": 5,
+        "firstname": "Petr",
+        "secondname": "Vasiliev",
+        "age": 34,
+        "city": "Volgograd"
+    },
+    {
+        "id": 6,
+        "firstname": "Petr",
+        "secondname": "Vasiliev",
+        "age": 34,
+        "city": "Volgograd"
+    },
+    {
+        "id": 7,
+        "firstname": "Petr",
+        "secondname": "Vasiliev",
+        "age": 34,
+        "city": "Volgograd"
+    },
+    {
+        "id": 8,
+        "firstname": "Petr",
+        "secondname": "Vasiliev",
+        "age": 34,
+        "city": "Volgograd"
+    },
+    {
+        "id": 9,
+        "firstname": "Petr",
+        "secondname": "Vasiliev",
+        "age": 34,
+        "city": "Volgograd"
+    },
+    {
+        "id": 10,
+        "firstname": "Petr",
+        "secondname": "Vasiliev",
+        "age": 34,
+        "city": "Volgograd"
+    },
+    {
+        "id": 2,
+        "firstname": "Kostya",
+        "secondname": "Vasiliev",
+        "age": 34,
+        "city": "Volgograd"
+    },
+    {
+        "id": 12,
+        "firstname": "Kostya",
+        "secondname": "Vasiliev",
+        "age": 34,
+        "city": "Volgograd"
+    }
+]
