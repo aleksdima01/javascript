@@ -15,11 +15,7 @@ const userSchema = joi.object({
 
 const users = Array.from(JSON.parse(fs.readFileSync(path.join(__dirname, "users.json"), "utf-8")));
 let userID = 0;
-users.forEach(el => {
-    if (userID < el.id) {
-        userID = el.id
-    }
-});
+
 
 app.use(express.json());
 
@@ -44,6 +40,12 @@ app.post('/users', (req, res) => {
     if (result.error) {
         return res.status(400).send({ error: result.error.details });
     }
+    users.forEach(el => {
+        userID = 0;
+        if (userID < el.id) {
+            userID = el.id
+        }
+    });
     userID += 1;
     users.push({
         id: userID,
@@ -82,6 +84,7 @@ app.delete('/users/:id', (req, res) => {
         const userIndex = users.indexOf(user);
         users.splice(userIndex, 1);
         res.send({ users });
+        fs.writeFileSync(path.join(__dirname, "users.json"), JSON.stringify(users, null, 4), 'utf-8');
     }
     else {
         res.status(404);
