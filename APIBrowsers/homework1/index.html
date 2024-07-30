@@ -12,8 +12,8 @@
 <body>
     <h3 class="title">Расписание занятий</h3>
     <div class="boot_table">
-        <table class="table">
-            <thead>
+        <table class="table table-hover align-middle">
+            <thead class="table-light">
                 <tr>
                     <th scope="col">№</th>
                     <th scope="col">Название занятия</th>
@@ -21,10 +21,10 @@
                     <th scope="col">Макс. кол-во участников</th>
                     <th scope="col">Текущее кол-во участников</th>
                     <th scope="col">Запись в группу</th>
+                    <th scope="col">Отмена записи</th>
                 </tr>
             </thead>
-            <tbody>
-
+            <tbody class="table-group-divider">
             </tbody>
         </table>
     </div>
@@ -44,7 +44,7 @@
     .boot_table {
         padding: 30px;
         display: flex;
-        width: 70%;
+        width: 100%;
         justify-content: center;
     }
 
