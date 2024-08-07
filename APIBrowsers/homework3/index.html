@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/7ac71924ee.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    #photo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .photo {
+        margin: 10px;
+        border: 1px solid #ccc;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+        height: 1100px;
+    }
+
+    .photo img {
+        height: 100%;
+    }
+
+    .button {
+        border: none;
+        background-color: white;
+        color: rgba(126, 172, 78, 0.939);
+        outline: none;
+    }
+
+    .button :hover {
+        color: rgba(162, 234, 85, 0.939);
+    }
+
+    .author {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 780px;
+        justify-content: space-between;
+    }
+
+    .text {
+        word-wrap: break-word;
+        width: 300px;
+    }
+
+    p {
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    span {
+        font-weight: 300;
+    }
+
+    .lbtn {
+        border: none;
+        background-color: white;
+        color: rgb(6, 184, 184);
+    }
+
+    .lbtn :hover {
+        filter: brightness(120%);
+    }
+
+    .fa-span {
+        font-size: 40px;
+    }
+
+    .fa-solid {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+</style>
+
+<body>
+    <div id="photo-container">
+        <div class="author">
+            <div><button class="lbtn" type="button"><i class="fa-solid fa-backward fa-4x"><span class="fa-span">
+                            Предыдущее
+                            фото</span></i></button>
+            </div>
+        </div>
+        <div class="div-button"><button class="button" type="button"><i class="fa-regular fa-thumbs-up fa-5x fa-beat"
+                    style="
+                animation-duration: 2s;--fa-animation-iteration-count:2;"></i></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
