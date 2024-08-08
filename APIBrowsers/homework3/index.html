@@ -13,6 +13,7 @@
         justify-content: center;
         align-items: center;
         gap: 60px;
+        margin: 50px;
     }
 
     .photo {
@@ -34,7 +35,7 @@
         outline: none;
     }
 
-    .button :hover {
+    .button:hover {
         color: rgba(162, 234, 85, 0.939);
     }
 
@@ -66,7 +67,11 @@
         color: rgb(6, 184, 184);
     }
 
-    .lbtn :hover {
+    .lbtn:focus-visible {
+        outline: none;
+    }
+
+    .lbtn:hover {
         filter: brightness(120%);
     }
 
@@ -79,19 +84,26 @@
         align-items: center;
         gap: 10px;
     }
+
+    .fa-solid:focus-visible {
+        outline: none;
+    }
+
+    .fa-regular:focus-visible {
+        outline: none;
+    }
 </style>
 
 <body>
     <div id="photo-container">
         <div class="author">
-            <div><button class="lbtn" type="button"><i class="fa-solid fa-backward fa-4x"><span class="fa-span">
-                            Предыдущее
-                            фото</span></i></button>
-            </div>
+            <button class="lbtn" type="button"><i class="fa-solid fa-backward fa-4x"><span class="fa-span">
+                        Предыдущее
+                        фото</span></i></button>
         </div>
         <div class="div-button"><button class="button" type="button"><i class="fa-regular fa-thumbs-up fa-5x fa-beat"
                     style="
-                animation-duration: 2s;--fa-animation-iteration-count:2;"></i></button>
+                animation-duration: 2s;--fa-animation-iteration-count:2;:focus-visible{outline:none;}"></i></button>
         </div>
     </div>
     <script src="script.js"></script>

@@ -34,21 +34,23 @@ API-ключ.
 6. Реализуйте бесконечную подгрузку фотографий при прокручивании страницы.
 */
 
-const accessKey = "";
+const accessKey = "Введите свой ключик Access key https://unsplash.com/";
+
 
 let photoId = null;
 let imgIdArray = [];
 if (localStorage.getItem('array') !== null) {
-    imgIdArray.push(localStorage.getItem('array'));
+    for (let index = 0; index < localStorage.getItem("array").split(',').length; index++) {
+        imgIdArray.push(localStorage.getItem("array").split(',')[index]);
+    }
 }
 const photoContainer = document.querySelector('#photo-container');
 const likeButton = document.querySelector('.button');
 const fetchPhotos = async (url) => {
     try {
         const response = await fetch(url);
-        //const response = await fetch(`https://api.unsplash.com/photos/random/?client_id=${accessKey}`);
         if (!response.ok) {
-            throw new Error("Ошибка при загрузке данных");
+            throw new Error("Ошибка при загрузке данных!");
         }
         const data = await response.json();
         photoId = data.id;
@@ -58,21 +60,20 @@ const fetchPhotos = async (url) => {
         localStorage.setItem('array', imgIdArray);
         addPhotoInHTML(data);
     } catch (error) {
-        const errorMessage = document.createElement("div");
-        errorMessage.textContent = error.message;
-        photoContainer.append(errorMessage);
+        photoContainer.textContent = error.message;
+        photoContainer.setAttribute('style', 'font-size: 30px;');
     }
-
-
 }
 
 fetchPhotos(`https://api.unsplash.com/photos/random/?client_id=${accessKey}`);
 
 
 function addPhotoInHTML(data) {
-    photoContainer.insertAdjacentHTML('afterbegin', `<div class="photo"><img src="${data.urls.regular}" alt="${data.alt_description}"></div>`);
-    const authorOfImage = document.querySelector(".author");
-    authorOfImage.insertAdjacentHTML('beforeend', `
+    const photoContainer = document.querySelector("#photo-container");
+    const divButton = document.querySelector(".div-button");
+    const lbtn = document.querySelector(".lbtn");
+    divButton.insertAdjacentHTML('beforebegin', `<div class="photo"><img src="${data.urls.regular}" alt="${data.alt_description}"></div>`);
+    lbtn.insertAdjacentHTML('afterend', `
     <div class="text">
     <p>Автор: <span>${data.user.name}</span></p>
     <p>Об авторе: <span> ${data.user.bio == null ? "Нет информации" : data.user.bio}</span></p>
@@ -88,12 +89,28 @@ likeButton.addEventListener('click', () => {
     localStorage.setItem(photoId, countLikes);
 })
 
-
 const previousButton = photoContainer.querySelector(".lbtn");
-console.log(previousButton);
-// previousButton.addEventListener('click', () => {
-//     fetchPhotos(`https://api.unsplash.com/photos/${imgIdArray.pop()}/?client_id=${accessKey}`);
-// })
+
+if (imgIdArray.length == 0) {
+    previousButton.setAttribute('style', 'pointer-events:none');
+    previousButton.firstChild.firstChild.textContent = 'Нет фото'
+}
+else {
+    previousButton.removeAttribute('style', 'pointer-events:none');
+    previousButton.firstChild.firstChild.textContent = 'Предыдущее фото'
+}
+previousButton.addEventListener('click', () => {
+    const text = document.querySelector(".text");
+    const photo = document.querySelector(".photo");
+    text.remove();
+    photo.remove();
+    if (imgIdArray.length == 2) {
+        previousButton.setAttribute('style', 'pointer-events:none');
+        previousButton.firstChild.firstChild.textContent = 'Нет фото'
+    }
+    imgIdArray.pop();
+    fetchPhotos(`https://api.unsplash.com/photos/${imgIdArray.pop()}/?client_id=${accessKey}`);
+})
 
 
 
