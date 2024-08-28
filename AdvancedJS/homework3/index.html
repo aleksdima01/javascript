@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="review">
+        <div class="product_name">
+            <h3>Введите название продукта</h3>
+            <input class="product_name__input" type="text">
+        </div>
+        <textarea name="textarea" id="input"></textarea>
+        <button type="button" id="button">Разместить отзыв</button>
+        <button type="button" class="to_reviews">Просмотреть отзывы</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+
+
+
+
+<style>
+    .review {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    #input {
+        height: 200px;
+        width: 800px;
+        font-size: 20px;
+    }
+
+    #button {
+        height: 50px;
+        width: 200px;
+        font-size: 20px;
+    }
+
+    #textcontainer {
+        width: 800px;
+        font-size: 30px;
+        word-wrap: break-word;
+    }
+
+    .to_reviews {
+        height: 50px;
+        width: 200px;
+        font-size: 20px;
+    }
+</style>
+
+</html>
