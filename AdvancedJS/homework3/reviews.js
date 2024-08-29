@@ -20,33 +20,28 @@ toWriteReview.addEventListener('click', () => {
     window.location.href = './index.html';
 })
 
-function event() {
-
-}
-
 const topLi = document.querySelectorAll(".top_li");
 topLi.forEach(element => {
     element.addEventListener('click', (e) => {
         if (e.target.classList.contains("top_li")) {
             e.target.closest(".top_li").firstElementChild.classList.toggle("hidden");
             element.closest("li").classList.toggle("top_li2");
-
         }
         if (e.target.classList.contains("delete_button")) {
-            // var tag; //Элемент, содержимое которого без вложенных тегов нужно получить 
             const key = e.target.parentNode.parentNode.childNodes[0].textContent;
             e.target.previousElementSibling.remove();
-            const productReview = document.querySelector('.product_review');
-            console.log(e.target.parentNode);
+            const productReview = e.target.parentNode.parentNode.querySelector('.product_review');
+            const targetParent = e.target.parentNode;
             e.target.remove();
             localStorage.setItem(key, productReview.innerHTML);
-            let d = localStorage.getItem(key);
-            d = d.replaceAll('\n', '').trim();
-            console.log(d.length);
-            if (d === '') {
+            let storage = localStorage.getItem(key);
+            storage = storage.replaceAll('\n', '').trim();
+            if (storage == '') {
                 localStorage.removeItem(key);
+                targetParent.parentNode.remove();
+                if (localStorage.length == 0)
+                    checkEmpty();
             }
-            checkEmpty()
         }
     });
 })

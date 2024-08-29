@@ -14,9 +14,6 @@
 Возможность удаления отзыва (при нажатии на кнопку "Удалить" рядом с отзывом, данный отзыв удаляется из LocalStorage).
  */
 
-// if (localStorage.getItem("review") !== null) {
-//     textcontainer.innerHTML = localStorage.getItem("review");
-// }
 const reviewsDiv = document.querySelector(".review");
 const message = document.createElement("p");
 const p = document.createElement("p");
@@ -25,7 +22,6 @@ const textcontainer = document.createElement("div")
 
 button.addEventListener("click", () => {
     const productName = document.querySelector(".product_name__input");
-    //reviewsDiv.removeChild(message);
     if (reviewsDiv.contains(message)) {
         reviewsDiv.contains(message);
     }
@@ -44,10 +40,10 @@ button.addEventListener("click", () => {
             throw new Error("Отзыв слишком длинный");
 
         if (localStorage.getItem(`${productName.value}`) != null) {
-            textcontainer.innerHTML = `${localStorage.getItem(`${productName.value}`)}`
+            textcontainer.innerHTML = `${localStorage.getItem(`${productName.value}`)}`;
         }
         else {
-            textcontainer.innerHTML = ''
+            textcontainer.innerHTML = '';
         }
         textcontainer.insertAdjacentHTML("beforeend", `<li class="down_li">${input.value}</li><button class="delete_button" type="button">Удалить</button>`);
         input.value = "";
