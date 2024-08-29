@@ -10,24 +10,63 @@
 <body>
     <h2>Отзывы о товарах</h2>
     <ul class="product_name">
-        <!-- <li>sfd
-            <ul class="product_review">
-                <li>sdf</li>
-            </ul>
-        </li> -->
     </ul>
-    <button type="button" class="to_write_review">Оставить отзыв</button>
+    <button type="button" class="to_write_review" style="display: block;">Оставить отзыв</button>
+
     <script src="reviews.js"></script>
 </body>
 <style>
+    .product_name {
+        max-width: 800px;
+    }
+
+
     .to_write_review {
         height: 50px;
         width: 200px;
         font-size: 20px;
     }
 
-    li {
-        list-style-type: circle;
+    .top_li {
+        list-style-type: disclosure-open;
+        font-size: 30px;
+        pointer-events: all;
+        margin-bottom: 15px;
+    }
+
+    .top_li:hover {
+        color: rgb(0, 255, 76);
+    }
+
+    .top_li:hover .down_li {
+        color: initial;
+    }
+
+    .top_li2 {
+        list-style-type: disclosure-closed;
+    }
+
+    .down_li {
+        list-style-type: disc;
+        font-size: 23px;
+        word-wrap: break-word;
+
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .to_write_review:hover {
+        border: 2px solid;
+    }
+
+    .delete_button {
+        margin-bottom: 20px;
+    }
+
+    .delete_button:hover {
+        border: 2px solid;
     }
 </style>
 

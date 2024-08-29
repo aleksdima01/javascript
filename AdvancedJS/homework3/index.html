@@ -10,12 +10,13 @@
 <body>
     <div class="review">
         <div class="product_name">
+            <h2>Страница размещения отзывов</h2>
             <h3>Введите название продукта</h3>
             <input class="product_name__input" type="text">
         </div>
         <textarea name="textarea" id="input"></textarea>
-        <button type="button" id="button">Разместить отзыв</button>
-        <button type="button" class="to_reviews">Просмотреть отзывы</button>
+        <button type="button" class="button" id="button">Разместить отзыв</button>
+        <button type="button" class="to_reviews button">Просмотреть отзывы</button>
     </div>
     <script src="script.js"></script>
 </body>
@@ -25,6 +26,14 @@
 
 
 <style>
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
     .review {
         display: flex;
         align-items: center;
@@ -54,6 +63,10 @@
         height: 50px;
         width: 200px;
         font-size: 20px;
+    }
+
+    .button:hover {
+        border: 2px solid;
     }
 </style>
 
